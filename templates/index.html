@@ -362,24 +362,46 @@
 
       .model-top-lists .card {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .model-top-lists .card-body {
+        padding: 1rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .model-lists {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .list-section {
+        flex: 1;
       }
 
       .model-top-lists .list-group {
         background: transparent;
-      }
-
-      .model-top-lists .list-group-item {
-        background: rgba(255, 255, 255, 0.05);
-        border-color: var(--border-color);
-        color: var(--text-primary);
-        padding: 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 0;
       }
 
       .model-top-lists .list-group-item {
         display: flex;
         align-items: center;
         gap: 0.75rem;
-        padding: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        border-radius: 4px;
+        height: 48px;
+        color: var(--text-primary);
       }
 
       .model-top-lists .item-image {
@@ -387,11 +409,15 @@
         height: 32px;
         border-radius: 4px;
         object-fit: cover;
+        flex-shrink: 0;
       }
 
       .model-top-lists .item-info {
         flex-grow: 1;
         min-width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       .model-top-lists .item-name {
@@ -400,24 +426,45 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        line-height: 1.2;
+        color: var(--text-primary);
       }
 
       .model-top-lists .item-subtext {
         font-size: 0.8rem;
         color: var(--text-secondary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2;
       }
 
       .model-top-lists .item-count {
         color: var(--spotify-green);
         font-weight: 500;
-        font-size: 0.9rem;
-        margin-right: 0.5rem;
+        font-size: 0.85rem;
+        margin-right: 0.25rem;
+        flex-shrink: 0;
+        min-width: 1rem;
+        text-align: right;
       }
 
       .model-top-lists .spotify-link {
         color: var(--spotify-green);
         font-size: 1rem;
         flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        margin-left: 0.25rem;
+      }
+
+      .model-top-lists h6.text-muted {
+        margin-bottom: 0.75rem;
+        font-size: 0.9rem;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -567,9 +614,9 @@
           <div class="col-md-4 mb-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">{{ model }}</h5>
-                <div class="row">
-                  <div class="col-md-6">
+                <h5 class="card-title mb-3">{{ model }}</h5>
+                <div class="model-lists">
+                  <div class="list-section">
                     <h6 class="text-muted">Top Songs</h6>
                     <ul class="list-group">
                       {% for song in model_stats | selectattr("model",
@@ -592,7 +639,7 @@
                       {% endfor %}
                     </ul>
                   </div>
-                  <div class="col-md-6">
+                  <div class="list-section">
                     <h6 class="text-muted">Top Artists</h6>
                     <ul class="list-group">
                       {% for artist in model_stats | selectattr("model",
