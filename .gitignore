@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -15,28 +16,35 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 
 # Virtual Environment
-.env
-.venv
-env/
 venv/
+.venv/
 ENV/
-env.bak/
-venv.bak/
+
+# Environment Variables
+.env
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+
+# OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Project specific
+genre_cache.json
 outputs/
 spotify_cache.json
 *.log
@@ -68,3 +76,8 @@ wheels/
 
 .csv
 data_exports/llm_music_choices.csv
+
+# Include docs directory for GitHub Pages
+!docs/
+!docs/**
+docs/.DS_Store

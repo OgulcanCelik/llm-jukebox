@@ -319,16 +319,20 @@
                   (LLMs) express themselves through music choices. Each model
                   was asked to create a playlist of 10 songs based on how they
                   "feel", allowing us to analyze their musical preferences and
-                  emotional expression through song selection.
+                  emotional expression through song selection. <br />
+                  <br />*Genre information is sourced from the Spotify Web API.
                 </p>
                 <p class="mb-4">
-                  Created by
                   <a href="https://twitter.com/lumendriada" target="_blank"
-                    >@lumendriada</a
+                    ><i class="fab fa-twitter"></i> @lumendriada</a
+                  >
+                  •
+                  <a href="https://github.com/OgulcanCelik" target="_blank"
+                    ><i class="fab fa-github"></i> @OgulcanCelik</a
                   >
                   •
                   <a href="data_exports/llm_music_choices.csv"
-                    >Download Dataset</a
+                    ><i class="fas fa-download"></i> Download Dataset</a
                   >
                 </p>
                 <h6 class="text-muted mb-2">Experiment Details:</h6>
@@ -439,21 +443,27 @@
 
       <!-- Genre Analysis -->
       <h2 class="section-title">Genre Analysis</h2>
-      <p class="text-center text-muted mb-4">
-        Genre information is sourced from the Spotify Web API
-      </p>
-
-      <!-- Genre Distribution -->
-      <div class="plot-container">
-        <div class="card">
-          <div class="card-body">{{ genre_distribution_plot | safe }}</div>
-        </div>
-      </div>
-
-      <!-- Genre Heatmap -->
-      <div class="plot-container">
-        <div class="card">
-          <div class="card-body">{{ genre_heatmap | safe }}</div>
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card bg-dark">
+            <div class="card-body">
+              <!-- Genre Distribution Plot -->
+              <div class="mb-4">
+                <h3>Genre Distribution</h3>
+                {{ genre_distribution_plot | safe }}
+              </div>
+              <!-- Genre Chord Diagram -->
+              <div class="mb-4">
+                <h3>Model-Genre Relationships</h3>
+                {{ genre_chord_diagram | safe }}
+              </div>
+              <!-- Genre Heatmap -->
+              <div class="mb-4">
+                <h3>Genre Heatmap</h3>
+                {{ genre_heatmap | safe }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

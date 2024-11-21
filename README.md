@@ -1,8 +1,17 @@
-# LLM Jukebox
+# LLM Jukebox 🎵
 
-A Python project that generates music playlists using various Large Language Models through OpenRouter API.
+An experimental project to analyze music preferences across different Large Language Models.
 
-## Setup
+## Features
+
+- Multi-model music playlist analysis
+- Genre visualization and analysis
+- Model comparison and diversity metrics
+- Interactive visualizations using Plotly
+
+## Deployment
+
+### Local Development
 
 1. Install dependencies:
 ```bash
@@ -10,28 +19,37 @@ pip install -r requirements.txt
 ```
 
 2. Set up environment variables:
-- Copy `.env.example` to `.env`
-- Add your OpenRouter API key to `.env`
-
-## Usage
-
-Run the playlist generator:
 ```bash
-python playlist_generator.py
+cp .env.example .env
+# Edit .env with your API keys
 ```
 
-The script will generate a playlist in JSON format with 10 songs based on the LLM's response.
-
-## Response Format
-
-The playlist is returned in the following JSON format:
-```json
-{
-    "playlist": [
-        {
-            "artist": "Artist Name",
-            "song": "Song Title"
-        }
-    ]
-}
+3. Run the Flask server:
+```bash
+python app.py
 ```
+
+### GitHub Pages Deployment
+
+1. Build the static site:
+```bash
+python build_site.py
+```
+
+2. Push to GitHub:
+```bash
+git add docs/
+git commit -m "Update GitHub Pages site"
+git push
+```
+
+3. Enable GitHub Pages:
+- Go to your repository settings
+- Under "GitHub Pages", select "main" branch and "/docs" folder
+- Save the changes
+
+The site will be available at: `https://[your-username].github.io/llm-jukebox/`
+
+## License
+
+MIT License

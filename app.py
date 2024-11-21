@@ -159,65 +159,31 @@ def generate_page_data():
             )
         playlists[model] = enrich_playlist_data(top_songs)
 
-    # Get genre statistics and visualizations
-    genre_data = get_genre_statistics(playlists)
-
-    # Handle genre plots (they might be already HTML strings)
-    genre_distribution = genre_data["genre_distribution_plot"]
-    if isinstance(genre_distribution, str):
-        genre_distribution_html = genre_distribution
-    else:
-        genre_distribution_html = genre_distribution.to_html(full_html=False, include_plotlyjs=False)
-        
-    genre_heatmap = genre_data["genre_heatmap"]
-    if isinstance(genre_heatmap, str):
-        genre_heatmap_html = genre_heatmap
-    else:
-        genre_heatmap_html = genre_heatmap.to_html(full_html=False, include_plotlyjs=False)
-
-    # Get the top genre
-    top_genre = next(iter(genre_data["genre_stats"]["top_genres"]), "N/A")
-
-    # Get top songs and artists per model
-    model_top_songs_artists = {}
-    for model in df['model'].unique():
-        model_df = df[df['model'] == model]
-        
-        # Get song counts and top 5 with artist names
-        song_counts = model_df.apply(lambda x: f"{x['song']} - {x['artist']}", axis=1).value_counts()
-        top_songs = song_counts.head(5).to_dict()
-        
-        # Get artist counts and top 5
-        artist_counts = model_df['artist'].value_counts()
-        top_artists = artist_counts.head(5).to_dict()
-        
-        model_top_songs_artists[model] = {
-            'top_songs': top_songs,
-            'top_artists': top_artists
-        }
-
+    # Get genre statistics and plots
+    genre_analysis = get_genre_statistics(playlists)
+    
     return {
-        "experiment_stats": experiment_stats,
-        "total_songs": total_songs,
-        "total_models": total_models,
-        "model_stats": model_stats.to_dict("records"),
-        "song_freq_plot": song_freq_plot,
-        "artist_freq_plot": artist_freq_plot,
-        "model_comparison_plot": model_comparison_plot_html,
-        "model_diversity_plot": model_diversity_plot_html,
-        "genre_distribution_plot": genre_distribution_html,
-        "genre_heatmap": genre_heatmap_html,
-        "genre_stats": genre_data["genre_stats"],
-        "top_genre": top_genre,
-        "playlists": playlists,
-        "model_top_songs_artists": model_top_songs_artists,
+        'playlists': playlists,
+        'genre_distribution_plot': genre_analysis['genre_distribution_plot'],
+        'genre_heatmap': genre_analysis['genre_heatmap'],
+        'genre_chord_diagram': genre_analysis['genre_chord_diagram'],
+        'genre_stats': genre_analysis['genre_stats'],
+        'experiment_stats': experiment_stats,
+        'total_songs': total_songs,
+        'total_models': total_models,
+        'model_stats': model_stats.to_dict("records"),
+        'song_freq_plot': song_freq_plot,
+        'artist_freq_plot': artist_freq_plot,
+        'model_comparison_plot': model_comparison_plot_html,
+        'model_diversity_plot': model_diversity_plot_html
     }
 
 
 @app.route("/")
 def index():
     data = generate_page_data()
-    return render_template("index.html", **data)
+    return render_template('index.html', **data)
+
 
 @app.route("/data_exports/<path:filename>")
 def get_data(filename):
@@ -227,6 +193,9 @@ def get_data(filename):
 
 def create_static_site(dist_dir):
     """Generate a static version of the site."""
+    import os
+    import shutil
+    
     # Create dist directory if it doesn't exist
     os.makedirs(dist_dir, exist_ok=True)
     
@@ -234,14 +203,12 @@ def create_static_site(dist_dir):
     data_exports_dir = os.path.join(dist_dir, 'data_exports')
     os.makedirs(data_exports_dir, exist_ok=True)
     
-    # Export data to the dist/data_exports directory
-    export_data(data_exports_dir)
-    
     # Get all the data
     data = generate_page_data()
 
-    # Render the template
-    html_content = render_template("index.html", **data)
+    # Render the template with the data
+    with app.app_context():
+        html_content = render_template('index.html', **data)
 
     # Write the HTML file
     with open(os.path.join(dist_dir, "index.html"), "w", encoding="utf-8") as f:
