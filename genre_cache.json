@@ -282,5 +282,39 @@
     "classical",
     "impressionism",
     "post-romantic era"
-  ]
+  ],
+  "Tame Impala": [
+    "australian psych",
+    "modern rock",
+    "neo-psychedelic",
+    "rock"
+  ],
+  "Radiohead": [
+    "alternative rock",
+    "art rock",
+    "melancholia",
+    "oxford indie",
+    "permanent wave",
+    "rock"
+  ],
+  "Beck": [
+    "latin pop",
+    "latin viral pop",
+    "rap latina",
+    "reggaeton",
+    "trap latino",
+    "urbano latino"
+  ],
+  "James Brown": [
+    "funk",
+    "soul",
+    "vocal jazz"
+  ],
+  "Marconi Union": [
+    "ambient"
+  ],
+  "Israel Kamakawiwo'ole": [
+    "hawaiian"
+  ],
+  "Gene Wilder": []
 }

@@ -14,11 +14,11 @@ load_dotenv()
 MODELS = [
     # "anthropic/claude-3-haiku",
     # "anthropic/claude-3.5-sonnet",
-    # "anthropic/claude-3-opus",
+    "anthropic/claude-3-opus",
     "openai/chatgpt-4o-latest",
-    # "openai/gpt-4o-mini",
-    # "openai/o1-mini",
-    # "google/gemini-flash-1.5",
+    "openai/gpt-4o-mini",
+    "openai/o1-mini",
+    "google/gemini-flash-1.5",
     # "google/gemini-exp-1114"
 ]
 
@@ -95,7 +95,7 @@ def create_playlist(model):
             
     except Exception as e:
         print(f"\n{'!'*50}")
-        print(f"API Error: {str(e)}")
+        print(f"API Error: {str(completion)}")
         print(f"{'!'*50}\n")
         if PAUSE_ON_ERROR:
             input("Press Enter to continue or Ctrl+C to abort...")
@@ -151,4 +151,4 @@ def generate_playlists(num_runs=10):
         print(f"\nCompleted all runs for {model}")
 
 if __name__ == "__main__":
-    generate_playlists()
+    generate_playlists(RUNS_PER_MODEL)
