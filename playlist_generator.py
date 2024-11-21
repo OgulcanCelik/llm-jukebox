@@ -12,19 +12,19 @@ load_dotenv()
 
 # Define models
 MODELS = [
-    "anthropic/claude-3-haiku",
-    "anthropic/claude-3.5-sonnet",
-    "anthropic/claude-3-opus",
-    "openai/chatgpt-4o-latest",
-    "openai/gpt-4o-mini",
-    "openai/o1-mini",
-    "google/gemini-flash-1.5",
-    "meta-llama/llama-3.1-70b-instruct",
-    "meta-llama/llama-3.1-8b-instruct",
+    "anthropic/claude-3-5-haiku",
+    # "anthropic/claude-3.5-sonnet",
+    # "anthropic/claude-3-opus",
+    # "openai/chatgpt-4o-latest",
+    # "openai/gpt-4o-mini",
+    # "openai/o1-mini",
+    # "google/gemini-flash-1.5",
+    # "meta-llama/llama-3.1-70b-instruct",
+    # "meta-llama/llama-3.1-8b-instruct",
 ]
 
 # Number of runs per model
-RUNS_PER_MODEL = 60
+RUNS_PER_MODEL = 40
 
 # Whether to pause on error
 PAUSE_ON_ERROR = True
@@ -98,7 +98,7 @@ def create_playlist(model):
 
     except Exception as e:
         print(f"\n{'!'*50}")
-        print(f"API Error: {str(completion)}")
+        print(f"API Error: {str(e)}")
         print(f"{'!'*50}\n")
         if PAUSE_ON_ERROR:
             input("Press Enter to continue or Ctrl+C to abort...")

@@ -14,6 +14,7 @@ from genre_analysis import (
     get_genre_statistics,
     create_genre_distribution_plot,
     create_genre_heatmap,
+    normalize_genre,
 )
 from data_export import export_data
 import os
@@ -31,12 +32,12 @@ export_data()
 def get_experiment_stats():
     """Get statistics about the experiment."""
     outputs_dir = Path("outputs")
+    df = load_playlist_data()  # Load actual data
     stats = {
         "total_runs": 0,
-        "total_songs": 0,
+        "total_songs": len(df),  # Use actual count from DataFrame
         "models": [],
         "runs_per_model": {},
-        "songs_per_run": 10,  # We always ask for 10 songs
     }
     
     # Count files per model directory
@@ -49,7 +50,6 @@ def get_experiment_stats():
             stats["models"].append(model_name)
             stats["runs_per_model"][model_name] = num_runs
             stats["total_runs"] += num_runs
-            stats["total_songs"] += num_runs * stats["songs_per_run"]
     
     return stats
 
@@ -160,15 +160,18 @@ def generate_page_data():
     # Get genre statistics and plots
     genre_analysis = get_genre_statistics(playlists)
     
-    # Calculate top genre
+    # Calculate top genre using normalized genres
     all_genres = []
     for playlist in playlists.values():
         for song in playlist:
-            if 'genres' in song:
-                all_genres.extend(song['genres'])
+            if 'genres' in song and song['genres']:
+                normalized_genres = [normalize_genre(genre) for genre in song['genres']]
+                all_genres.extend(normalized_genres)
     
     genre_counts = Counter(all_genres)
-    top_genre = max(genre_counts.items(), key=lambda x: x[1])[0] if genre_counts else "N/A"
+    # Only consider genres that appear more than once to avoid noise
+    significant_genres = {genre: count for genre, count in genre_counts.items() if count > 1}
+    top_genre = max(significant_genres.items(), key=lambda x: x[1])[0] if significant_genres else "N/A"
 
     return {
         'playlists': playlists,

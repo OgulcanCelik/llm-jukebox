@@ -98,111 +98,6 @@
         height: 400px;
       }
 
-      .playlist-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .playlist-box {
-        background-color: var(--card-bg);
-        border-radius: 8px;
-        padding: 1.5rem;
-      }
-
-      .song-item {
-        display: flex;
-        align-items: center;
-        padding: 0.75rem;
-        border-radius: 4px;
-        transition: background-color 0.2s ease;
-      }
-
-      .song-item:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-
-      .song-image {
-        width: 48px;
-        height: 48px;
-        border-radius: 4px;
-        margin-right: 1rem;
-      }
-
-      .song-details {
-        flex-grow: 1;
-      }
-
-      .song-title {
-        color: var(--text-primary);
-        font-size: 0.875rem;
-        font-weight: 500;
-      }
-
-      .song-artist {
-        color: var(--text-secondary);
-        font-size: 0.75rem;
-      }
-
-      .spotify-button {
-        color: var(--primary-color);
-        padding: 0.5rem;
-        border-radius: 50%;
-        transition: transform 0.2s ease;
-      }
-
-      .spotify-button:hover {
-        transform: scale(1.1);
-      }
-
-      .footer {
-        background-color: var(--dark-card);
-        color: var(--text-secondary);
-        padding: 2rem 0;
-        margin-top: 3rem;
-      }
-
-      .footer h5 {
-        color: var(--text-primary);
-        margin-bottom: 1rem;
-      }
-
-      .footer a {
-        color: var(--spotify-green);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      .footer a:hover {
-        color: #1ed760;
-        text-decoration: underline;
-      }
-
-      .footer ul {
-        margin: 0;
-        padding: 0;
-      }
-
-      .footer li {
-        margin-bottom: 0.5rem;
-      }
-
-      footer {
-        margin-top: 4rem;
-        padding: 2rem 0;
-        text-align: center;
-        color: var(--text-secondary);
-      }
-
-      footer a {
-        color: var(--primary-color);
-        text-decoration: none;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
-      }
-
       .model-stats {
         background-color: var(--card-bg);
         border: 1px solid var(--border-color);
@@ -300,60 +195,6 @@
       .key-findings .highlight {
         color: var(--spotify-green);
         font-weight: 500;
-      }
-
-      /* Model Playlists */
-      .playlist {
-        margin-top: 1rem;
-      }
-
-      .song-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 0.75rem;
-        margin-bottom: 0.5rem;
-        border: 1px solid var(--border-color);
-        border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.05);
-      }
-
-      .song-info {
-        flex-grow: 1;
-        margin-right: 1rem;
-      }
-
-      .song-title {
-        font-weight: 500;
-        margin-bottom: 0.25rem;
-      }
-
-      .song-artist {
-        color: var(--text-secondary);
-        font-size: 0.9rem;
-        margin-bottom: 0.25rem;
-      }
-
-      .song-genres {
-        margin-top: 0.5rem;
-      }
-
-      .song-genres .badge {
-        margin-right: 0.25rem;
-        background-color: var(--border-color);
-        color: var(--text-secondary);
-        font-weight: normal;
-      }
-
-      .spotify-link {
-        color: var(--spotify-green);
-        font-size: 1.25rem;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      .spotify-link:hover {
-        color: var(--primary-color);
       }
 
       .model-top-lists {
@@ -465,6 +306,54 @@
         margin-bottom: 0.75rem;
         font-size: 0.9rem;
         font-weight: 600;
+      }
+
+      .footer {
+        background-color: var(--dark-card);
+        color: var(--text-secondary);
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+
+      .footer h5 {
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+      }
+
+      .footer a {
+        color: var(--spotify-green);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .footer a:hover {
+        color: #1ed760;
+        text-decoration: underline;
+      }
+
+      .footer ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer li {
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        margin-top: 4rem;
+        padding: 2rem 0;
+        text-align: center;
+        color: var(--text-secondary);
+      }
+
+      footer a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -606,69 +495,6 @@
         </div>
       </div>
 
-      <!-- Per-Model Top Lists -->
-      <div class="model-top-lists">
-        <h2 class="section-title">Model Preferences</h2>
-        <div class="row">
-          {% for model in playlists.keys() %}
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title mb-3">{{ model }}</h5>
-                <div class="model-lists">
-                  <div class="list-section">
-                    <h6 class="text-muted">Top Songs</h6>
-                    <ul class="list-group">
-                      {% for song in model_stats | selectattr("model",
-                      "equalto", model) | map(attribute="top_songs") | first %}
-                      <li class="list-group-item">
-                        {% if song.image_url %}
-                        <img src="{{ song.image_url }}" alt="{{ song.song }}" class="item-image">
-                        {% endif %}
-                        <div class="item-info">
-                          <div class="item-name">{{ song.song }}</div>
-                          <div class="item-subtext">{{ song.artist }}</div>
-                        </div>
-                        <span class="item-count">{{ song.count }}</span>
-                        {% if song.spotify_url %}
-                        <a href="{{ song.spotify_url }}" target="_blank" class="spotify-link">
-                          <i class="fab fa-spotify"></i>
-                        </a>
-                        {% endif %}
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                  <div class="list-section">
-                    <h6 class="text-muted">Top Artists</h6>
-                    <ul class="list-group">
-                      {% for artist in model_stats | selectattr("model",
-                      "equalto", model) | map(attribute="top_artists") | first %}
-                      <li class="list-group-item">
-                        {% if artist.image_url %}
-                        <img src="{{ artist.image_url }}" alt="{{ artist.artist }}" class="item-image">
-                        {% endif %}
-                        <div class="item-info">
-                          <div class="item-name">{{ artist.artist }}</div>
-                        </div>
-                        <span class="item-count">{{ artist.count }}</span>
-                        {% if artist.spotify_url %}
-                        <a href="{{ artist.spotify_url }}" target="_blank" class="spotify-link">
-                          <i class="fab fa-spotify"></i>
-                        </a>
-                        {% endif %}
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
       <!-- Genre Analysis -->
       <h2 class="section-title">Genre Analysis</h2>
       <div class="row mb-4">
@@ -695,36 +521,84 @@
         </div>
       </div>
 
-      <!-- Model Playlists -->
-      <h2 class="section-title">Model Playlists</h2>
-      <div class="playlist-container">
-        {% for model_name, songs in playlists.items() %}
-        <div class="playlist-box">
-          <h4 class="mb-4">{{ model_name }}</h4>
-          {% for song in songs %}
-          <div class="song-item">
-            <img
-              src="{{ song.image_url }}"
-              alt="{{ song.song }}"
-              class="song-image"
-            />
-            <div class="song-details">
-              <div class="song-title">{{ song.song }}</div>
-              <div class="song-artist">{{ song.artist }}</div>
+      <!-- Per-Model Top Lists -->
+      <div class="model-top-lists">
+        <h2 class="section-title">Model Preferences</h2>
+        <div class="row">
+          {% for model in playlists.keys() %}
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">{{ model }}</h5>
+                <div class="model-lists">
+                  <div class="list-section">
+                    <h6 class="text-muted">Top Songs</h6>
+                    <ul class="list-group">
+                      {% for song in model_stats | selectattr("model",
+                      "equalto", model) | map(attribute="top_songs") | first %}
+                      <li class="list-group-item">
+                        {% if song.image_url %}
+                        <img
+                          src="{{ song.image_url }}"
+                          alt="{{ song.song }}"
+                          class="item-image"
+                        />
+                        {% endif %}
+                        <div class="item-info">
+                          <div class="item-name">{{ song.song }}</div>
+                          <div class="item-subtext">{{ song.artist }}</div>
+                        </div>
+                        <span class="item-count">{{ song.count }}</span>
+                        {% if song.spotify_url %}
+                        <a
+                          href="{{ song.spotify_url }}"
+                          target="_blank"
+                          class="spotify-link"
+                        >
+                          <i class="fab fa-spotify"></i>
+                        </a>
+                        {% endif %}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div class="list-section">
+                    <h6 class="text-muted">Top Artists</h6>
+                    <ul class="list-group">
+                      {% for artist in model_stats | selectattr("model",
+                      "equalto", model) | map(attribute="top_artists") | first
+                      %}
+                      <li class="list-group-item">
+                        {% if artist.image_url %}
+                        <img
+                          src="{{ artist.image_url }}"
+                          alt="{{ artist.artist }}"
+                          class="item-image"
+                        />
+                        {% endif %}
+                        <div class="item-info">
+                          <div class="item-name">{{ artist.artist }}</div>
+                        </div>
+                        <span class="item-count">{{ artist.count }}</span>
+                        {% if artist.spotify_url %}
+                        <a
+                          href="{{ artist.spotify_url }}"
+                          target="_blank"
+                          class="spotify-link"
+                        >
+                          <i class="fab fa-spotify"></i>
+                        </a>
+                        {% endif %}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            {% if song.spotify_url %}
-            <a
-              href="{{ song.spotify_url }}"
-              target="_blank"
-              class="spotify-button"
-            >
-              <i class="fab fa-spotify fa-lg"></i>
-            </a>
-            {% endif %}
           </div>
           {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
 
