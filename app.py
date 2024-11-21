@@ -11,6 +11,7 @@ from analyze_playlists import (
     get_model_statistics
 )
 from spotify_utils import enrich_playlist_data
+from genre_analysis import get_genre_statistics
 
 app = Flask(__name__)
 
@@ -41,12 +42,18 @@ def generate_page_data():
             })
         playlists[model] = enrich_playlist_data(top_songs)
     
+    # Get genre statistics and visualizations
+    genre_data = get_genre_statistics(playlists)
+    
     return {
         'song_freq_plot': song_freq_plot,
         'model_comparison_plot': model_comparison_plot,
         'model_diversity_plot': model_diversity_plot,
         'model_stats': model_stats.to_dict('records'),
-        'playlists': playlists
+        'playlists': playlists,
+        'genre_distribution_plot': genre_data['genre_distribution_plot'],
+        'genre_heatmap': genre_data['genre_heatmap'],
+        'genre_stats': genre_data['genre_stats']
     }
 
 @app.route('/')

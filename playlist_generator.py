@@ -15,8 +15,8 @@ MODELS = [
     # "anthropic/claude-3-haiku",
     # "anthropic/claude-3.5-sonnet",
     # "anthropic/claude-3-opus",
-    # "openai/chatgpt-4o-latest",
-    "openai/gpt-4o-mini",
+    "openai/chatgpt-4o-latest",
+    # "openai/gpt-4o-mini",
     # "openai/o1-mini",
     # "google/gemini-flash-1.5",
     # "google/gemini-exp-1114"

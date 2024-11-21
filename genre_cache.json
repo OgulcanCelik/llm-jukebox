@@ -1,0 +1,286 @@
+{
+  "MGMT": [
+    "alternative rock",
+    "indie rock",
+    "indietronica",
+    "modern rock",
+    "rock"
+  ],
+  "The Weeknd": [
+    "canadian contemporary r&b",
+    "canadian pop",
+    "pop"
+  ],
+  "Bon Iver": [
+    "chamber pop",
+    "eau claire indie",
+    "indie folk",
+    "melancholia",
+    "modern rock"
+  ],
+  "Frank Ocean": [
+    "lgbtq+ hip hop",
+    "neo soul"
+  ],
+  "Phoebe Bridgers": [
+    "indie pop",
+    "la indie",
+    "pov: indie"
+  ],
+  "Beach House": [
+    "art pop",
+    "baltimore indie",
+    "dream pop",
+    "dreamo",
+    "indie rock",
+    "indietronica",
+    "modern dream pop",
+    "pov: indie"
+  ],
+  "Foo Fighters": [
+    "alternative metal",
+    "alternative rock",
+    "modern rock",
+    "permanent wave",
+    "post-grunge",
+    "rock"
+  ],
+  "Fleetwood Mac": [
+    "album rock",
+    "classic rock",
+    "rock",
+    "soft rock",
+    "yacht rock"
+  ],
+  "Queen & David Bowie": [
+    "anadolu rock",
+    "karadeniz turkuleri",
+    "turkish alternative",
+    "turkish alternative rock",
+    "turkish rock"
+  ],
+  "Avicii": [
+    "dance pop",
+    "edm",
+    "pop",
+    "pop dance"
+  ],
+  "Dua Lipa": [
+    "dance pop",
+    "pop",
+    "uk pop"
+  ],
+  "Olivia Rodrigo": [
+    "pop"
+  ],
+  "Harry Styles": [
+    "pop"
+  ],
+  "The Kid LAROI & Justin Bieber": [
+    "turkish hip hop",
+    "turkish trap"
+  ],
+  "The Beatles": [
+    "british invasion",
+    "classic rock",
+    "merseybeat",
+    "psychedelic rock",
+    "rock"
+  ],
+  "Justin Bieber ft. Daniel Caesar & Giveon": [
+    "turkish hip hop",
+    "turkish trap"
+  ],
+  "Mark Ronson ft. Bruno Mars": [
+    "pop soul"
+  ],
+  "Justin Bieber & The Kid LAROI": [
+    "turkish hip hop",
+    "turkish trap"
+  ],
+  "Pharrell Williams": [
+    "dance pop",
+    "pop"
+  ],
+  "Katrina and The Waves": [
+    "new wave pop"
+  ],
+  "Justin Timberlake": [
+    "dance pop",
+    "pop"
+  ],
+  "The Beach Boys": [
+    "baroque pop",
+    "classic rock",
+    "folk rock",
+    "mellow gold",
+    "psychedelic rock",
+    "rock",
+    "singer-songwriter",
+    "sunshine pop"
+  ],
+  "ABBA": [
+    "europop",
+    "swedish pop"
+  ],
+  "Queen": [
+    "classic rock",
+    "glam rock",
+    "rock"
+  ],
+  "Taylor Swift": [
+    "pop"
+  ],
+  "The Black Eyed Peas": [
+    "dance pop",
+    "pop",
+    "pop rap"
+  ],
+  "Katrina and the Waves": [
+    "new wave pop"
+  ],
+  "American Authors": [
+    "modern rock",
+    "pop rock"
+  ],
+  "Bill Withers": [
+    "classic soul",
+    "funk",
+    "quiet storm",
+    "soul"
+  ],
+  "Nina Simone": [
+    "jazz blues",
+    "neo soul",
+    "soul",
+    "soul jazz",
+    "torch song",
+    "vocal jazz"
+  ],
+  "Beethoven": [
+    "classical",
+    "classical era",
+    "early romantic era",
+    "german romanticism"
+  ],
+  "Leonard Cohen": [
+    "canadian singer-songwriter",
+    "melancholia",
+    "permanent wave",
+    "singer-songwriter"
+  ],
+  "Louis Armstrong": [
+    "adult standards",
+    "dixieland",
+    "harlem renaissance",
+    "jazz trumpet",
+    "lounge",
+    "new orleans jazz",
+    "soul",
+    "swing",
+    "vocal jazz"
+  ],
+  "Enya": [
+    "celtic",
+    "gregorian dance",
+    "operatic pop"
+  ],
+  "Ludovico Einaudi": [
+    "compositional ambient",
+    "neo-classical"
+  ],
+  "Led Zeppelin": [
+    "album rock",
+    "classic rock",
+    "hard rock",
+    "rock"
+  ],
+  "The Eagles": [
+    "country rock"
+  ],
+  "Katrina & The Waves": [
+    "new wave pop"
+  ],
+  "Daft Punk": [
+    "electro",
+    "filter house",
+    "rock"
+  ],
+  "John Lennon": [
+    "classic rock",
+    "rock"
+  ],
+  "Electric Light Orchestra": [
+    "album rock",
+    "art rock",
+    "beatlesque",
+    "classic rock",
+    "glam rock",
+    "mellow gold",
+    "rock",
+    "soft rock",
+    "symphonic rock"
+  ],
+  "Bob Marley": [
+    "reggae",
+    "roots reggae"
+  ],
+  "Kraftwerk": [
+    "dusseldorf electronic",
+    "early synthpop",
+    "electro",
+    "proto-techno",
+    "synthpop"
+  ],
+  "Jeff Buckley": [
+    "melancholia",
+    "permanent wave",
+    "singer-songwriter"
+  ],
+  "Eric Clapton": [
+    "album rock",
+    "blues rock",
+    "classic rock",
+    "electric blues",
+    "mellow gold",
+    "rock",
+    "singer-songwriter",
+    "soft rock"
+  ],
+  "Don McLean": [
+    "classic rock",
+    "folk",
+    "folk rock",
+    "mellow gold",
+    "singer-songwriter",
+    "soft rock"
+  ],
+  "Nirvana": [
+    "grunge",
+    "permanent wave",
+    "rock"
+  ],
+  "Oasis": [
+    "beatlesque",
+    "britpop",
+    "madchester",
+    "permanent wave",
+    "rock"
+  ],
+  "Coldplay": [
+    "permanent wave",
+    "pop"
+  ],
+  "Bright Eyes": [
+    "chamber pop",
+    "indie rock",
+    "melancholia",
+    "omaha indie",
+    "stomp and holler"
+  ],
+  "Claude Debussy": [
+    "classical",
+    "impressionism",
+    "post-romantic era"
+  ]
+}

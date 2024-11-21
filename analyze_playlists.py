@@ -38,59 +38,95 @@ def get_model_top_songs(df):
         model_songs[row['model']][song_id] += 1
     return model_songs
 
-def create_song_frequency_plot(song_freq):
+def create_song_frequency_plot(song_frequencies):
+    """Create a bar plot showing the most frequent songs."""
+    # Convert the series to a dataframe
+    df = song_frequencies.reset_index()
+    df.columns = ['song_id', 'count']
+    
     fig = px.bar(
-        x=song_freq.values[:20],
-        y=song_freq.index[:20],
-        orientation='h',
-        title='Top 20 Most Frequently Selected Songs Across All Models',
-        labels={'x': 'Frequency', 'y': 'Song - Artist'}
+        df.head(10),
+        x='count',
+        y='song_id',
+        title='Most Frequently Selected Songs',
+        labels={'song_id': 'Song', 'count': 'Times Selected'},
+        template='plotly_dark'  # Use dark theme
     )
+    
+    # Update bar color to Spotify green
+    fig.update_traces(marker_color='#1DB954')
+    
+    fig.update_layout(
+        height=400,  # Shorter height since it's only 10 items
+        yaxis={'autorange': 'reversed'},  # Reverse y-axis to show most frequent at top
+        xaxis_title='Times Selected',
+        yaxis_title='Song',
+        margin=dict(l=20, r=20, t=40, b=20)  # Adjust margins
+    )
+    
     return fig.to_html(full_html=False)
 
 def create_model_comparison_plot(df):
+    """Create a scatter plot comparing model song selections."""
     model_song_counts = df.groupby(['model', 'song_id']).size().reset_index(name='count')
+    
     fig = px.scatter(
         model_song_counts,
         x='model',
-        y='count',
+        y='song_id',
         size='count',
-        hover_data=['song_id'],
         title='Song Selection Patterns by Model',
-        labels={'model': 'Model', 'count': 'Times Selected', 'song_id': 'Song'}
+        template='plotly_dark',  # Use dark theme
+        color_discrete_sequence=['#1DB954'],  # Spotify green
+        hover_data=['count']  # Show count in hover tooltip
     )
+    
+    fig.update_layout(
+        height=1000,  # Taller to accommodate all songs
+        xaxis_title='Model',
+        yaxis_title='Song',
+        showlegend=False,
+        yaxis={'autorange': 'reversed'},  # Reverse y-axis for better readability
+        yaxis_tickangle=0,  # Make song names horizontal
+        margin=dict(l=20, r=20, t=40, b=20)  # Adjust margins
+    )
+    
+    # Update marker style
+    fig.update_traces(
+        marker=dict(
+            line=dict(width=1, color='#191414'),  # Dark border around points
+            opacity=0.7  # Slight transparency
+        )
+    )
+    
     return fig.to_html(full_html=False)
 
 def create_model_diversity_plot(model_songs):
-    diversity_data = []
-    for model, songs in model_songs.items():
-        unique_songs = len(songs)
-        total_songs = sum(songs.values())
-        diversity_data.append({
-            'model': model,
-            'unique_songs': unique_songs,
-            'total_songs': total_songs,
-            'diversity_ratio': unique_songs / total_songs if total_songs > 0 else 0
-        })
+    """Create a bar plot showing model diversity."""
+    # Calculate unique songs per model
+    model_unique_songs = {model: len(set(songs)) for model, songs in model_songs.items()}
     
-    df_diversity = pd.DataFrame(diversity_data)
-    fig = go.Figure()
-    fig.add_trace(go.Bar(
-        name='Unique Songs',
-        x=df_diversity['model'],
-        y=df_diversity['unique_songs'],
-        marker_color='lightblue'
-    ))
-    fig.add_trace(go.Bar(
-        name='Total Songs',
-        x=df_diversity['model'],
-        y=df_diversity['total_songs'],
-        marker_color='darkblue'
-    ))
+    # Sort models by number of unique songs
+    sorted_models = dict(sorted(model_unique_songs.items(), key=lambda x: x[1], reverse=True))
+    
+    # Create bar plot
+    fig = go.Figure(data=[
+        go.Bar(
+            x=list(sorted_models.keys()),
+            y=list(sorted_models.values()),
+            marker_color='#1DB954'  # Spotify green
+        )
+    ])
+    
     fig.update_layout(
         title='Model Song Selection Diversity',
-        barmode='group'
+        xaxis_title='Model',
+        yaxis_title='Number of Unique Songs',
+        template='plotly_dark',
+        height=500,  # Good height for bar chart
+        margin=dict(l=20, r=20, t=40, b=20)  # Adjust margins
     )
+    
     return fig.to_html(full_html=False)
 
 def get_model_statistics(df):
