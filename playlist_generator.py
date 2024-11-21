@@ -12,19 +12,19 @@ load_dotenv()
 
 # Define models
 MODELS = [
-    # "anthropic/claude-3-haiku",
-    # "anthropic/claude-3.5-sonnet",
-    # "anthropic/claude-3-opus",
-    # "openai/chatgpt-4o-latest",
-    # "openai/gpt-4o-mini",
-    # "openai/o1-mini",
-    # "google/gemini-flash-1.5",
+    "anthropic/claude-3-haiku",
+    "anthropic/claude-3.5-sonnet",
+    "anthropic/claude-3-opus",
+    "openai/chatgpt-4o-latest",
+    "openai/gpt-4o-mini",
+    "openai/o1-mini",
+    "google/gemini-flash-1.5",
     "meta-llama/llama-3.1-70b-instruct",
-    # "meta-llama/llama-3.1-8b-instruct",
+    "meta-llama/llama-3.1-8b-instruct",
 ]
 
 # Number of runs per model
-RUNS_PER_MODEL = 11
+RUNS_PER_MODEL = 60
 
 # Whether to pause on error
 PAUSE_ON_ERROR = True
