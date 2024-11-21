@@ -130,18 +130,23 @@ def create_model_diversity_plot(model_songs):
     return fig.to_html(full_html=False)
 
 def get_model_statistics(df):
+    """Calculate statistics for each model."""
     stats = []
+    
+    # Create song_id if it doesn't exist
+    if 'song_id' not in df.columns:
+        df['song_id'] = df['song'] + ' - ' + df['artist']
+    
     for model in df['model'].unique():
         model_df = df[df['model'] == model]
         unique_songs = len(model_df['song_id'].unique())
         total_songs = len(model_df)
-        most_common = model_df['song_id'].value_counts().head(1)
+        
         stats.append({
             'model': model,
             'unique_songs': unique_songs,
             'total_songs': total_songs,
-            'diversity_ratio': unique_songs / total_songs if total_songs > 0 else 0,
-            'most_common_song': most_common.index[0] if not most_common.empty else 'N/A',
-            'most_common_count': most_common.values[0] if not most_common.empty else 0
+            'diversity_ratio': round(unique_songs / total_songs, 2) if total_songs > 0 else 0
         })
+    
     return pd.DataFrame(stats)

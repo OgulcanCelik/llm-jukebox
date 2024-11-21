@@ -1,6 +1,5 @@
 from flask import Flask, render_template
-import os
-import shutil
+import pandas as pd
 from analyze_playlists import (
     load_playlist_data,
     get_song_frequencies,
@@ -11,33 +10,39 @@ from analyze_playlists import (
     get_model_statistics
 )
 from spotify_utils import enrich_playlist_data
-from genre_analysis import get_genre_statistics
+from genre_analysis import get_genre_statistics, create_genre_distribution_plot, create_genre_heatmap
 
 app = Flask(__name__)
 
 def generate_page_data():
     """Generate all the data needed for the page."""
-    # Load and process data
     df = load_playlist_data()
-    song_frequencies = get_song_frequencies(df)
-    model_songs = get_model_top_songs(df)
+    
+    # Create song_id column
+    df['song_id'] = df['song'] + ' - ' + df['artist']
+    
+    # Get total songs and models
+    total_songs = len(df)
+    total_models = df['model'].nunique()
+    
+    # Get model statistics
     model_stats = get_model_statistics(df)
     
-    # Create visualizations
-    song_freq_plot = create_song_frequency_plot(song_frequencies)
+    # Generate plots
+    song_freq_plot = create_song_frequency_plot(get_song_frequencies(df))
     model_comparison_plot = create_model_comparison_plot(df)
-    model_diversity_plot = create_model_diversity_plot(model_songs)
+    model_diversity_plot = create_model_diversity_plot(get_model_top_songs(df))
     
-    # Get top songs per model and enrich with Spotify data
+    # Get playlists with Spotify metadata
     playlists = {}
     for model in df['model'].unique():
         model_df = df[df['model'] == model]
         top_songs = []
         for song_id, count in model_df['song_id'].value_counts().head(10).items():
-            song_name, artist_name = song_id.split(' - ', 1)
+            song_row = model_df[model_df['song_id'] == song_id].iloc[0]
             top_songs.append({
-                'song': song_name,
-                'artist': artist_name,
+                'song': song_row['song'],
+                'artist': song_row['artist'],
                 'count': count
             })
         playlists[model] = enrich_playlist_data(top_songs)
@@ -45,15 +50,21 @@ def generate_page_data():
     # Get genre statistics and visualizations
     genre_data = get_genre_statistics(playlists)
     
+    # Get the top genre
+    top_genre = next(iter(genre_data['genre_stats']['top_genres']), 'N/A')
+    
     return {
+        'total_songs': total_songs,
+        'total_models': total_models,
+        'model_stats': model_stats.to_dict('records'),
         'song_freq_plot': song_freq_plot,
         'model_comparison_plot': model_comparison_plot,
         'model_diversity_plot': model_diversity_plot,
-        'model_stats': model_stats.to_dict('records'),
-        'playlists': playlists,
         'genre_distribution_plot': genre_data['genre_distribution_plot'],
         'genre_heatmap': genre_data['genre_heatmap'],
-        'genre_stats': genre_data['genre_stats']
+        'genre_stats': genre_data['genre_stats'],
+        'top_genre': top_genre,
+        'playlists': playlists
     }
 
 @app.route('/')
