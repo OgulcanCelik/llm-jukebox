@@ -12,15 +12,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
       :root {
-        --primary-color: #1DB954;
+        --primary-color: #1db954;
         --background-color: #191414;
         --card-bg: #282828;
-        --text-primary: #FFFFFF;
-        --text-secondary: #B3B3B3;
+        --text-primary: #ffffff;
+        --text-secondary: #b3b3b3;
         --border-color: #404040;
-        --spotify-green: #1DB954;
+        --spotify-green: #1db954;
         --dark-bg: #191414;
         --dark-card: #282828;
       }
@@ -28,7 +29,8 @@
       body {
         background-color: var(--background-color);
         color: var(--text-primary);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       }
 
       .container {
@@ -84,6 +86,16 @@
 
       .plot-container .card {
         padding: 1rem;
+      }
+
+      .card-body {
+        padding: 1.5rem;
+      }
+
+      #song-freq-plot,
+      #artist-freq-plot {
+        width: 100%;
+        height: 400px;
       }
 
       .playlist-container {
@@ -190,11 +202,188 @@
       footer a:hover {
         text-decoration: underline;
       }
+
+      .model-stats {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem !important;
+        height: 100%;
+      }
+
+      .model-stats h6.text-primary {
+        color: var(--spotify-green) !important;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .model-stats .section-container {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .model-stats .section-container:last-child {
+        margin-bottom: 0;
+      }
+
+      .model-stats h6.text-muted {
+        color: var(--text-secondary) !important;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .model-stats ol {
+        color: var(--text-primary);
+        margin-bottom: 0;
+      }
+
+      .model-stats li {
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+      }
+
+      .model-stats li:last-child {
+        margin-bottom: 0;
+      }
+
+      .model-stats li span.count {
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+      }
+
+      .experiment-stats {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+      }
+
+      .experiment-stats li {
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .experiment-stats .value {
+        color: var(--text-primary);
+        font-weight: 500;
+      }
+
+      .experiment-stats.model-runs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.5rem;
+      }
+
+      .key-findings {
+        background: rgba(29, 185, 84, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .key-findings ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .key-findings li {
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .key-findings .highlight {
+        color: var(--spotify-green);
+        font-weight: 500;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1 class="section-title mb-4">LLM Jukebox</h1>
+
+      <!-- Experiment Overview -->
+      <div class="plot-container">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Experiment Overview</h5>
+            <div class="row">
+              <div class="col-md-8">
+                <p class="mb-3">
+                  This experiment explores how different Large Language Models
+                  (LLMs) express themselves through music choices. Each model
+                  was asked to create a playlist of 10 songs based on how they
+                  "feel", allowing us to analyze their musical preferences and
+                  emotional expression through song selection.
+                </p>
+                <p class="mb-4">
+                  Created by
+                  <a href="https://twitter.com/lumendriada" target="_blank"
+                    >@lumendriada</a
+                  >
+                  •
+                  <a href="data_exports/llm_music_choices.csv"
+                    >Download Dataset</a
+                  >
+                </p>
+                <h6 class="text-muted mb-2">Experiment Details:</h6>
+                <ul class="experiment-stats">
+                  <li>
+                    Total Experiment Runs:
+                    <span class="value">{{ experiment_stats.total_runs }}</span>
+                  </li>
+                  <li>
+                    Songs Generated:
+                    <span class="value"
+                      >{{ experiment_stats.total_songs }}</span
+                    >
+                    ({{ experiment_stats.songs_per_run }} per run)
+                  </li>
+                  <li>
+                    Models Tested:
+                    <span class="value"
+                      >{{ experiment_stats.models|length }}</span
+                    >
+                  </li>
+                </ul>
+                <h6 class="text-muted mb-2">Runs per Model:</h6>
+                <ul class="experiment-stats model-runs">
+                  {% for model, runs in experiment_stats.runs_per_model.items()
+                  %}
+                  <li>
+                    {{ model }}: <span class="value">{{ runs }}</span> runs
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="key-findings">
+                  <h6 class="text-muted mb-2">Key Findings:</h6>
+                  <ul>
+                    <li>
+                      Most common genre:
+                      <span class="highlight">{{ top_genre }}</span>
+                    </li>
+                    <li>
+                      Genre diversity:
+                      <span class="highlight"
+                        >{{ genre_stats.total_genres }}</span
+                      >
+                      unique genres
+                    </li>
+                    <li>Data available for download and further analysis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Stats Overview -->
       <div class="stats-grid">
@@ -217,22 +406,26 @@
       </div>
 
       <!-- Data Insights -->
-      <h2 class="section-title">Data Insights</h2>
-      
-      <!-- Song Frequency -->
-      <div class="plot-container">
-        <div class="card">
-          <div class="card-body">
-            {{ song_freq_plot | safe }}
+      <div class="container-fluid">
+        <h2 class="section-title">Data Insights</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div id="song-freq-plot" style="height: 400px">
+                  {{ song_freq_plot | safe }}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Model Comparison -->
-      <div class="plot-container">
-        <div class="card">
-          <div class="card-body">
-            {{ model_comparison_plot | safe }}
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div id="artist-freq-plot" style="height: 400px">
+                  {{ artist_freq_plot | safe }}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,31 +433,27 @@
       <!-- Model Diversity -->
       <div class="plot-container">
         <div class="card">
-          <div class="card-body">
-            {{ model_diversity_plot | safe }}
-          </div>
+          <div class="card-body">{{ model_diversity_plot | safe }}</div>
         </div>
       </div>
 
       <!-- Genre Analysis -->
       <h2 class="section-title">Genre Analysis</h2>
-      <p class="text-center text-muted mb-4">Genre information is sourced from the Spotify Web API</p>
-      
+      <p class="text-center text-muted mb-4">
+        Genre information is sourced from the Spotify Web API
+      </p>
+
       <!-- Genre Distribution -->
       <div class="plot-container">
         <div class="card">
-          <div class="card-body">
-            {{ genre_distribution_plot | safe }}
-          </div>
+          <div class="card-body">{{ genre_distribution_plot | safe }}</div>
         </div>
       </div>
 
       <!-- Genre Heatmap -->
       <div class="plot-container">
         <div class="card">
-          <div class="card-body">
-            {{ genre_heatmap | safe }}
-          </div>
+          <div class="card-body">{{ genre_heatmap | safe }}</div>
         </div>
       </div>
 
@@ -300,33 +489,6 @@
         {% endfor %}
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h5>About</h5>
-            <p>
-              LLM Jukebox: Analyzing music preferences of different language models.
-              Created by <a href="https://twitter.com/cansurmeli" target="_blank">@cansurmeli</a>
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h5>Data</h5>
-            <p>Download the data to conduct your own analysis:</p>
-            <ul class="list-unstyled">
-              <li><a href="data_exports/song_choices.csv">Song Choices (CSV)</a></li>
-              <li><a href="data_exports/song_choices.json">Song Choices (JSON)</a></li>
-              <li><a href="data_exports/spotify_metadata.csv">Spotify Metadata (CSV)</a></li>
-              <li><a href="data_exports/spotify_metadata.json">Spotify Metadata (JSON)</a></li>
-              <li><a href="data_exports/artist_genres.csv">Artist Genres (CSV)</a></li>
-              <li><a href="data_exports/artist_genres.json">Artist Genres (JSON)</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -1,16 +1,4 @@
 {
-  "MGMT": [
-    "alternative rock",
-    "indie rock",
-    "indietronica",
-    "modern rock",
-    "rock"
-  ],
-  "The Weeknd": [
-    "canadian contemporary r&b",
-    "canadian pop",
-    "pop"
-  ],
   "Bon Iver": [
     "chamber pop",
     "eau claire indie",
@@ -18,14 +6,37 @@
     "melancholia",
     "modern rock"
   ],
-  "Frank Ocean": [
-    "lgbtq+ hip hop",
-    "neo soul"
+  "MGMT": [
+    "alternative rock",
+    "indie rock",
+    "indietronica",
+    "modern rock",
+    "rock"
   ],
-  "Phoebe Bridgers": [
-    "indie pop",
-    "la indie",
-    "pov: indie"
+  "Bright Eyes": [
+    "chamber pop",
+    "indie rock",
+    "melancholia",
+    "omaha indie",
+    "stomp and holler"
+  ],
+  "Fleetwood Mac": [
+    "album rock",
+    "classic rock",
+    "rock",
+    "soft rock",
+    "yacht rock"
+  ],
+  "The Weeknd": ["canadian contemporary r&b", "canadian pop", "pop"],
+  "Phoebe Bridgers": ["indie pop", "la indie", "pov: indie"],
+  "Coldplay": ["permanent wave", "pop"],
+  "Radiohead": [
+    "alternative rock",
+    "art rock",
+    "melancholia",
+    "oxford indie",
+    "permanent wave",
+    "rock"
   ],
   "Beach House": [
     "art pop",
@@ -45,41 +56,25 @@
     "post-grunge",
     "rock"
   ],
-  "Fleetwood Mac": [
-    "album rock",
+  "Muse": ["alternative rock", "modern rock", "permanent wave", "rock"],
+  "Tracy Chapman": ["folk", "lilith", "singer-songwriter", "women's music"],
+  "David Bowie": [
+    "art rock",
     "classic rock",
-    "rock",
-    "soft rock",
-    "yacht rock"
+    "glam rock",
+    "permanent wave",
+    "rock"
   ],
-  "Queen & David Bowie": [
-    "anadolu rock",
-    "karadeniz turkuleri",
-    "turkish alternative",
-    "turkish alternative rock",
-    "turkish rock"
-  ],
-  "Avicii": [
-    "dance pop",
-    "edm",
-    "pop",
-    "pop dance"
-  ],
-  "Dua Lipa": [
-    "dance pop",
-    "pop",
-    "uk pop"
-  ],
-  "Olivia Rodrigo": [
-    "pop"
-  ],
-  "Harry Styles": [
-    "pop"
-  ],
-  "The Kid LAROI & Justin Bieber": [
-    "turkish hip hop",
-    "turkish trap"
-  ],
+  "American Authors": ["modern rock", "pop rock"],
+  "Alina Baraz feat. Khalid": ["turkish pop"],
+  "Justin Timberlake": ["dance pop", "pop"],
+  "Dua Lipa": ["dance pop", "pop", "uk pop"],
+  "Olivia Rodrigo": ["pop"],
+  "Harry Styles": ["pop"],
+  "Mark Ronson ft. Bruno Mars": ["pop soul"],
+  "Ed Sheeran": ["pop", "singer-songwriter pop", "uk pop"],
+  "The Kid LAROI & Justin Bieber": ["turkish hip hop", "turkish trap"],
+  "Pharrell Williams": ["dance pop", "pop"],
   "The Beatles": [
     "british invasion",
     "classic rock",
@@ -87,28 +82,7 @@
     "psychedelic rock",
     "rock"
   ],
-  "Justin Bieber ft. Daniel Caesar & Giveon": [
-    "turkish hip hop",
-    "turkish trap"
-  ],
-  "Mark Ronson ft. Bruno Mars": [
-    "pop soul"
-  ],
-  "Justin Bieber & The Kid LAROI": [
-    "turkish hip hop",
-    "turkish trap"
-  ],
-  "Pharrell Williams": [
-    "dance pop",
-    "pop"
-  ],
-  "Katrina and The Waves": [
-    "new wave pop"
-  ],
-  "Justin Timberlake": [
-    "dance pop",
-    "pop"
-  ],
+  "Katrina and The Waves": ["new wave pop"],
   "The Beach Boys": [
     "baroque pop",
     "classic rock",
@@ -119,36 +93,11 @@
     "singer-songwriter",
     "sunshine pop"
   ],
-  "ABBA": [
-    "europop",
-    "swedish pop"
-  ],
-  "Queen": [
-    "classic rock",
-    "glam rock",
-    "rock"
-  ],
-  "Taylor Swift": [
-    "pop"
-  ],
-  "The Black Eyed Peas": [
-    "dance pop",
-    "pop",
-    "pop rap"
-  ],
-  "Katrina and the Waves": [
-    "new wave pop"
-  ],
-  "American Authors": [
-    "modern rock",
-    "pop rock"
-  ],
-  "Bill Withers": [
-    "classic soul",
-    "funk",
-    "quiet storm",
-    "soul"
-  ],
+  "ABBA": ["europop", "swedish pop"],
+  "Queen": ["classic rock", "glam rock", "rock"],
+  "Bill Withers": ["classic soul", "funk", "quiet storm", "soul"],
+  "James Brown": ["funk", "soul", "vocal jazz"],
+  "Katrina and the Waves": ["new wave pop"],
   "Nina Simone": [
     "jazz blues",
     "neo soul",
@@ -157,18 +106,23 @@
     "torch song",
     "vocal jazz"
   ],
+  "Taylor Swift": ["pop"],
   "Beethoven": [
     "classical",
     "classical era",
     "early romantic era",
     "german romanticism"
   ],
+  "Enya": ["celtic", "gregorian dance", "operatic pop"],
+  "Ludovico Einaudi": ["compositional ambient", "neo-classical"],
   "Leonard Cohen": [
     "canadian singer-songwriter",
     "melancholia",
     "permanent wave",
     "singer-songwriter"
   ],
+  "Led Zeppelin": ["album rock", "classic rock", "hard rock", "rock"],
+  "Marconi Union": ["ambient"],
   "Louis Armstrong": [
     "adult standards",
     "dixieland",
@@ -180,36 +134,13 @@
     "swing",
     "vocal jazz"
   ],
-  "Enya": [
-    "celtic",
-    "gregorian dance",
-    "operatic pop"
-  ],
-  "Ludovico Einaudi": [
-    "compositional ambient",
-    "neo-classical"
-  ],
-  "Led Zeppelin": [
-    "album rock",
-    "classic rock",
-    "hard rock",
-    "rock"
-  ],
-  "The Eagles": [
-    "country rock"
-  ],
-  "Katrina & The Waves": [
-    "new wave pop"
-  ],
-  "Daft Punk": [
-    "electro",
-    "filter house",
-    "rock"
-  ],
-  "John Lennon": [
-    "classic rock",
-    "rock"
-  ],
+  "The Eagles": ["country rock"],
+  "Gary Jules": ["neo mellow"],
+  "Jeff Buckley": ["melancholia", "permanent wave", "singer-songwriter"],
+  "The Temper Trap": ["indietronica", "modern rock", "shimmer pop"],
+  "Yiruma": ["korean instrumental", "neo-classical", "new age piano"],
+  "Katrina & The Waves": ["new wave pop"],
+  "Daft Punk": ["electro", "filter house", "rock"],
   "Electric Light Orchestra": [
     "album rock",
     "art rock",
@@ -221,22 +152,28 @@
     "soft rock",
     "symphonic rock"
   ],
-  "Bob Marley": [
-    "reggae",
-    "roots reggae"
+  "John Lennon": ["classic rock", "rock"],
+  "Gene Wilder": [],
+  "Aretha Franklin": [
+    "classic soul",
+    "jazz blues",
+    "memphis soul",
+    "soul",
+    "southern soul",
+    "vocal jazz"
   ],
-  "Kraftwerk": [
-    "dusseldorf electronic",
-    "early synthpop",
-    "electro",
-    "proto-techno",
-    "synthpop"
+  "Journey": [
+    "album rock",
+    "classic rock",
+    "hard rock",
+    "mellow gold",
+    "rock",
+    "soft rock"
   ],
-  "Jeff Buckley": [
-    "melancholia",
-    "permanent wave",
-    "singer-songwriter"
-  ],
+  "Nirvana": ["grunge", "permanent wave", "rock"],
+  "Bob Marley": ["reggae", "roots reggae"],
+  "Oasis": ["beatlesque", "britpop", "madchester", "permanent wave", "rock"],
+  "Johnny Cash": ["arkansas country", "outlaw country", "rock"],
   "Eric Clapton": [
     "album rock",
     "blues rock",
@@ -247,74 +184,5 @@
     "singer-songwriter",
     "soft rock"
   ],
-  "Don McLean": [
-    "classic rock",
-    "folk",
-    "folk rock",
-    "mellow gold",
-    "singer-songwriter",
-    "soft rock"
-  ],
-  "Nirvana": [
-    "grunge",
-    "permanent wave",
-    "rock"
-  ],
-  "Oasis": [
-    "beatlesque",
-    "britpop",
-    "madchester",
-    "permanent wave",
-    "rock"
-  ],
-  "Coldplay": [
-    "permanent wave",
-    "pop"
-  ],
-  "Bright Eyes": [
-    "chamber pop",
-    "indie rock",
-    "melancholia",
-    "omaha indie",
-    "stomp and holler"
-  ],
-  "Claude Debussy": [
-    "classical",
-    "impressionism",
-    "post-romantic era"
-  ],
-  "Tame Impala": [
-    "australian psych",
-    "modern rock",
-    "neo-psychedelic",
-    "rock"
-  ],
-  "Radiohead": [
-    "alternative rock",
-    "art rock",
-    "melancholia",
-    "oxford indie",
-    "permanent wave",
-    "rock"
-  ],
-  "Beck": [
-    "latin pop",
-    "latin viral pop",
-    "rap latina",
-    "reggaeton",
-    "trap latino",
-    "urbano latino"
-  ],
-  "James Brown": [
-    "funk",
-    "soul",
-    "vocal jazz"
-  ],
-  "Marconi Union": [
-    "ambient"
-  ],
-  "Israel Kamakawiwo'ole": [
-    "hawaiian"
-  ],
-  "Gene Wilder": []
+  "Michael Jackson": ["r&b", "soul"]
 }

@@ -67,3 +67,4 @@ wheels/
 *.egg
 
 .csv
+data_exports/llm_music_choices.csv
