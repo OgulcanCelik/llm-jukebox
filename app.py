@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import pandas as pd
 from analyze_playlists import (
     load_playlist_data,
@@ -15,8 +15,14 @@ from genre_analysis import (
     create_genre_distribution_plot,
     create_genre_heatmap,
 )
+from data_export import export_data
+import os
+import shutil
 
 app = Flask(__name__)
+
+# Export data on startup
+export_data()
 
 
 def generate_page_data():
@@ -73,12 +79,27 @@ def generate_page_data():
 
 @app.route("/")
 def index():
-    """Render the index page with all data."""
-    return render_template("index.html", **generate_page_data())
+    data = generate_page_data()
+    return render_template("index.html", **data)
+
+@app.route("/data")
+def get_data():
+    """Serve the single CSV data file."""
+    return send_from_directory("data_exports", "llm_music_choices.csv")
 
 
 def create_static_site(dist_dir):
     """Generate a static version of the site."""
+    # Create dist directory if it doesn't exist
+    os.makedirs(dist_dir, exist_ok=True)
+    
+    # Create data_exports directory inside dist
+    data_exports_dir = os.path.join(dist_dir, 'data_exports')
+    os.makedirs(data_exports_dir, exist_ok=True)
+    
+    # Export data to the dist/data_exports directory
+    export_data(data_exports_dir)
+    
     # Get all the data
     data = generate_page_data()
 
@@ -92,7 +113,7 @@ def create_static_site(dist_dir):
     # Copy static assets
     static_dir = os.path.join(app.root_path, "static")
     if os.path.exists(static_dir):
-        shutil.copytree(static_dir, os.path.join(dist_dir, "static"))
+        shutil.copytree(static_dir, os.path.join(dist_dir, "static"), dirs_exist_ok=True)
 
 
 if __name__ == "__main__":
