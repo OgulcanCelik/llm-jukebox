@@ -184,92 +184,154 @@ def create_genre_heatmap(genre_df):
 
 def normalize_genre(genre):
     """Normalize genres to main categories."""
-    # Main genre mappings
-    genre_mappings = {
-        # Rock variants
-        "alt-rock": "rock",
-        "indie rock": "rock",
-        "hard rock": "rock",
-        "progressive rock": "rock",
-        "classic rock": "rock",
-        "punk rock": "rock",
-        "alternative rock": "rock",
-        "garage rock": "rock",
-        "post-rock": "rock",
-        # Pop variants
-        "indie pop": "pop",
-        "synth-pop": "pop",
-        "electropop": "pop",
-        "art pop": "pop",
-        "dance pop": "pop",
-        "chamber pop": "pop",
-        # Electronic variants
-        "electro": "electronic",
-        "electronica": "electronic",
-        "edm": "electronic",
-        "ambient": "electronic",
-        "downtempo": "electronic",
-        "techno": "electronic",
-        "house": "electronic",
-        "idm": "electronic",
-        # Jazz variants
-        "vocal jazz": "jazz",
-        "contemporary jazz": "jazz",
-        "smooth jazz": "jazz",
-        "jazz fusion": "jazz",
-        "bebop": "jazz",
-        "big band": "jazz",
-        # Soul/R&B variants
-        "neo soul": "soul",
-        "contemporary r&b": "r&b",
-        "rhythm and blues": "r&b",
-        "motown": "soul",
-        "funk": "soul",
-        # Hip Hop variants
-        "rap": "hip hop",
-        "trap": "hip hop",
-        "conscious hip hop": "hip hop",
-        "alternative hip hop": "hip hop",
-        # Folk variants
-        "indie folk": "folk",
-        "folk rock": "folk",
-        "contemporary folk": "folk",
-        "traditional folk": "folk",
-        # Metal variants
-        "heavy metal": "metal",
-        "black metal": "metal",
-        "death metal": "metal",
-        "thrash metal": "metal",
-        "doom metal": "metal",
-        # Classical variants
-        "contemporary classical": "classical",
-        "modern classical": "classical",
-        "neo-classical": "classical",
-        "chamber music": "classical",
-    }
-
-    # Convert genre to lowercase for matching
+    # Convert to lowercase for consistent matching
     genre = genre.lower()
-
-    # Check direct mappings
-    if genre in genre_mappings:
-        return genre_mappings[genre]
-
-    # Check partial matches
-    for variant, main_genre in genre_mappings.items():
-        if variant in genre or genre in variant:
-            return main_genre
-
-    # Check main genres
-    main_genres = set(genre_mappings.values())
-    if genre in main_genres:
-        return genre
-
-    # For unmapped genres, try to find the closest match
+    
+    # Genre mapping dictionary
+    genre_mapping = {
+        # Rock variants
+        'alt-rock': 'rock',
+        'alternative rock': 'rock',
+        'hard rock': 'rock',
+        'indie rock': 'rock',
+        'modern rock': 'rock',
+        'post-rock': 'rock',
+        'prog-rock': 'rock',
+        'progressive rock': 'rock',
+        'punk rock': 'rock',
+        'rock-n-roll': 'rock',
+        'soft rock': 'rock',
+        'garage rock': 'rock',
+        'grunge': 'rock',
+        'psychedelic rock': 'rock',
+        'classic rock': 'rock',
+        
+        # Pop variants
+        'art pop': 'pop',
+        'dance pop': 'pop',
+        'electropop': 'pop',
+        'indie pop': 'pop',
+        'k-pop': 'pop',
+        'synth-pop': 'pop',
+        'pop rock': 'pop',
+        'power pop': 'pop',
+        'dream pop': 'pop',
+        'chamber pop': 'pop',
+        'baroque pop': 'pop',
+        
+        # Electronic variants
+        'ambient': 'electronic',
+        'downtempo': 'electronic',
+        'drum and bass': 'electronic',
+        'dubstep': 'electronic',
+        'edm': 'electronic',
+        'electronica': 'electronic',
+        'house': 'electronic',
+        'idm': 'electronic',
+        'techno': 'electronic',
+        'trance': 'electronic',
+        'trip-hop': 'electronic',
+        'synthwave': 'electronic',
+        'electro': 'electronic',
+        
+        # Hip-hop variants
+        'rap': 'hip-hop',
+        'trap': 'hip-hop',
+        'conscious hip hop': 'hip-hop',
+        'alternative hip hop': 'hip-hop',
+        'underground hip hop': 'hip-hop',
+        'gangsta rap': 'hip-hop',
+        'old school hip hop': 'hip-hop',
+        
+        # R&B variants
+        'contemporary r&b': 'r&b',
+        'neo soul': 'r&b',
+        'soul': 'r&b',
+        'funk': 'r&b',
+        'motown': 'r&b',
+        'rhythm and blues': 'r&b',
+        
+        # Jazz variants
+        'acid jazz': 'jazz',
+        'bebop': 'jazz',
+        'big band': 'jazz',
+        'cool jazz': 'jazz',
+        'fusion': 'jazz',
+        'latin jazz': 'jazz',
+        'smooth jazz': 'jazz',
+        'swing': 'jazz',
+        'vocal jazz': 'jazz',
+        'nu jazz': 'jazz',
+        
+        # Folk variants
+        'indie folk': 'folk',
+        'folk rock': 'folk',
+        'contemporary folk': 'folk',
+        'traditional folk': 'folk',
+        'americana': 'folk',
+        'bluegrass': 'folk',
+        
+        # Metal variants
+        'black metal': 'metal',
+        'death metal': 'metal',
+        'doom metal': 'metal',
+        'heavy metal': 'metal',
+        'power metal': 'metal',
+        'progressive metal': 'metal',
+        'thrash metal': 'metal',
+        'nu metal': 'metal',
+        
+        # Classical variants
+        'baroque': 'classical',
+        'chamber music': 'classical',
+        'choral': 'classical',
+        'contemporary classical': 'classical',
+        'modern classical': 'classical',
+        'opera': 'classical',
+        'orchestral': 'classical',
+        'romantic': 'classical',
+        'symphony': 'classical',
+        
+        # Country variants
+        'alternative country': 'country',
+        'contemporary country': 'country',
+        'country rock': 'country',
+        'outlaw country': 'country',
+        'traditional country': 'country',
+        
+        # Blues variants
+        'blues rock': 'blues',
+        'chicago blues': 'blues',
+        'delta blues': 'blues',
+        'electric blues': 'blues',
+        'modern blues': 'blues',
+        
+        # Reggae variants
+        'dub': 'reggae',
+        'roots reggae': 'reggae',
+        'ska': 'reggae',
+        'dancehall': 'reggae',
+    }
+    
+    # Check direct mapping
+    if genre in genre_mapping:
+        return genre_mapping[genre]
+    
+    # Check if genre contains any of the main categories
+    main_genres = {
+        'rock', 'pop', 'electronic', 'hip-hop', 'r&b', 'jazz',
+        'folk', 'metal', 'classical', 'country', 'blues', 'reggae'
+    }
+    
     for main_genre in main_genres:
         if main_genre in genre:
             return main_genre
-
+    
+    # Check for partial matches in mapping
+    for mapped_genre, main_genre in genre_mapping.items():
+        if mapped_genre in genre:
+            return main_genre
+    
     return genre  # Return original if no mapping found
 
 

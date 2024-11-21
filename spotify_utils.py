@@ -54,11 +54,18 @@ def get_track_info(song_name, artist_name):
         
         if results['tracks']['items']:
             track = results['tracks']['items'][0]
+            
+            # Get artist genres
+            artist_id = track['artists'][0]['id']
+            artist = spotify.artist(artist_id)
+            genres = artist['genres']
+            
             track_info = {
                 'image_url': track['album']['images'][0]['url'] if track['album']['images'] else None,
                 'spotify_url': track['external_urls']['spotify'],
                 'preview_url': track['preview_url'],
-                'album_name': track['album']['name']
+                'album_name': track['album']['name'],
+                'genres': genres
             }
             # Update cache
             cache[search_key] = track_info
@@ -72,7 +79,8 @@ def get_track_info(song_name, artist_name):
         'image_url': 'https://place-hold.it/300x300/666/fff/000.png?text=No%20Image',
         'spotify_url': None,
         'preview_url': None,
-        'album_name': 'Unknown Album'
+        'album_name': 'Unknown Album',
+        'genres': []
     }
     
     # Only cache if not already in cache

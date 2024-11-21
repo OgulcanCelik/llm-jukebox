@@ -142,11 +142,21 @@ def get_model_statistics(df):
         unique_songs = len(model_df['song_id'].unique())
         total_songs = len(model_df)
         
+        # Get top songs
+        top_songs = model_df.groupby(['song'])['song'].count().reset_index(name='count')
+        top_songs = top_songs.sort_values('count', ascending=False).head(5).to_dict('records')
+        
+        # Get top artists
+        top_artists = model_df.groupby(['artist'])['artist'].count().reset_index(name='count')
+        top_artists = top_artists.sort_values('count', ascending=False).head(5).to_dict('records')
+        
         stats.append({
             'model': model,
             'unique_songs': unique_songs,
             'total_songs': total_songs,
-            'diversity_ratio': round(unique_songs / total_songs, 2) if total_songs > 0 else 0
+            'diversity_ratio': round(unique_songs / total_songs, 2) if total_songs > 0 else 0,
+            'top_songs': top_songs,
+            'top_artists': top_artists
         })
     
     return pd.DataFrame(stats)

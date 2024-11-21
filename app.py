@@ -20,6 +20,7 @@ import os
 import shutil
 from pathlib import Path
 import plotly.express as px
+from collections import Counter
 
 app = Flask(__name__)
 
@@ -55,27 +56,23 @@ def get_experiment_stats():
 
 def generate_page_data():
     """Generate all data needed for the page."""
+    # Load playlist data
+    df = load_playlist_data()
+    total_songs = len(df)
+    total_models = len(df["model"].unique())
+
     # Get experiment stats
     experiment_stats = get_experiment_stats()
 
-    df = load_playlist_data()
-
-    # Create song_id column
-    df["song_id"] = df["song"] + " - " + df["artist"]
-
-    # Get total songs and models
-    total_songs = len(df)
-    total_models = df["model"].nunique()
-
-    # Get model statistics
+    # Get model stats
     model_stats = get_model_statistics(df)
 
-    # Get song frequency data for plot
+    # Get song frequencies
     song_counts = df.groupby(['song', 'artist']).size().reset_index(name='count')
     song_counts['song_artist'] = song_counts['song'] + ' - ' + song_counts['artist']
     song_counts = song_counts.sort_values('count', ascending=False)
     
-    # Get artist frequency data for plot
+    # Get artist frequencies
     artist_counts = df['artist'].value_counts().reset_index()
     artist_counts.columns = ['artist', 'count']
     
@@ -134,20 +131,21 @@ def generate_page_data():
     song_freq_plot = song_freq_plot.to_html(full_html=False, include_plotlyjs=False)
     artist_freq_plot = artist_freq_plot.to_html(full_html=False, include_plotlyjs=False)
     
-    # Get other plots (these are already HTML strings)
+    # Get model comparison plot
     model_comparison_plot = create_model_comparison_plot(df)
     if isinstance(model_comparison_plot, str):
         model_comparison_plot_html = model_comparison_plot
     else:
         model_comparison_plot_html = model_comparison_plot.to_html(full_html=False, include_plotlyjs=False)
         
+    # Get model diversity plot
     model_diversity_plot = create_model_diversity_plot(get_model_top_songs(df))
     if isinstance(model_diversity_plot, str):
         model_diversity_plot_html = model_diversity_plot
     else:
         model_diversity_plot_html = model_diversity_plot.to_html(full_html=False, include_plotlyjs=False)
 
-    # Get playlists with Spotify metadata
+    # Process playlists
     playlists = {}
     for model in df["model"].unique():
         model_df = df[df["model"] == model]
@@ -162,6 +160,16 @@ def generate_page_data():
     # Get genre statistics and plots
     genre_analysis = get_genre_statistics(playlists)
     
+    # Calculate top genre
+    all_genres = []
+    for playlist in playlists.values():
+        for song in playlist:
+            if 'genres' in song:
+                all_genres.extend(song['genres'])
+    
+    genre_counts = Counter(all_genres)
+    top_genre = max(genre_counts.items(), key=lambda x: x[1])[0] if genre_counts else "N/A"
+
     return {
         'playlists': playlists,
         'genre_distribution_plot': genre_analysis['genre_distribution_plot'],
@@ -175,7 +183,8 @@ def generate_page_data():
         'song_freq_plot': song_freq_plot,
         'artist_freq_plot': artist_freq_plot,
         'model_comparison_plot': model_comparison_plot_html,
-        'model_diversity_plot': model_diversity_plot_html
+        'model_diversity_plot': model_diversity_plot_html,
+        'top_genre': top_genre
     }
 
 
