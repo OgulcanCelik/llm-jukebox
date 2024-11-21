@@ -131,6 +131,7 @@ def create_model_diversity_plot(model_songs):
 
 def get_model_statistics(df):
     """Calculate statistics for each model."""
+    from spotify_utils import get_track_info
     stats = []
     
     # Create song_id if it doesn't exist
@@ -142,13 +143,30 @@ def get_model_statistics(df):
         unique_songs = len(model_df['song_id'].unique())
         total_songs = len(model_df)
         
-        # Get top songs
-        top_songs = model_df.groupby(['song'])['song'].count().reset_index(name='count')
-        top_songs = top_songs.sort_values('count', ascending=False).head(5).to_dict('records')
+        # Get top songs with Spotify data
+        top_songs = []
+        for _, row in model_df.groupby(['song', 'artist'])['song'].count().reset_index(name='count').sort_values('count', ascending=False).head(5).iterrows():
+            song_info = get_track_info(row['song'], row['artist'])
+            top_songs.append({
+                'song': row['song'],
+                'artist': row['artist'],
+                'count': row['count'],
+                'spotify_url': song_info.get('spotify_url', ''),
+                'image_url': song_info.get('image_url', '')
+            })
         
-        # Get top artists
-        top_artists = model_df.groupby(['artist'])['artist'].count().reset_index(name='count')
-        top_artists = top_artists.sort_values('count', ascending=False).head(5).to_dict('records')
+        # Get top artists with Spotify data
+        top_artists = []
+        for _, row in model_df.groupby(['artist'])['artist'].count().reset_index(name='count').sort_values('count', ascending=False).head(5).iterrows():
+            # Get artist image from their most played song
+            artist_song = model_df[model_df['artist'] == row['artist']].iloc[0]
+            song_info = get_track_info(artist_song['song'], row['artist'])
+            top_artists.append({
+                'artist': row['artist'],
+                'count': row['count'],
+                'spotify_url': song_info.get('spotify_url', ''),
+                'image_url': song_info.get('image_url', '')
+            })
         
         stats.append({
             'model': model,

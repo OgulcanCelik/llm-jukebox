@@ -375,9 +375,49 @@
         padding: 0.5rem 1rem;
       }
 
-      .model-top-lists .list-group-item .count {
+      .model-top-lists .list-group-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.5rem;
+      }
+
+      .model-top-lists .item-image {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+
+      .model-top-lists .item-info {
+        flex-grow: 1;
+        min-width: 0;
+      }
+
+      .model-top-lists .item-name {
+        margin: 0;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .model-top-lists .item-subtext {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+      }
+
+      .model-top-lists .item-count {
         color: var(--spotify-green);
         font-weight: 500;
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+      }
+
+      .model-top-lists .spotify-link {
+        color: var(--spotify-green);
+        font-size: 1rem;
+        flex-shrink: 0;
       }
     </style>
   </head>
@@ -534,11 +574,20 @@
                     <ul class="list-group">
                       {% for song in model_stats | selectattr("model",
                       "equalto", model) | map(attribute="top_songs") | first %}
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-center"
-                      >
-                        {{ song.song }}
-                        <span class="count">{{ song.count }}</span>
+                      <li class="list-group-item">
+                        {% if song.image_url %}
+                        <img src="{{ song.image_url }}" alt="{{ song.song }}" class="item-image">
+                        {% endif %}
+                        <div class="item-info">
+                          <div class="item-name">{{ song.song }}</div>
+                          <div class="item-subtext">{{ song.artist }}</div>
+                        </div>
+                        <span class="item-count">{{ song.count }}</span>
+                        {% if song.spotify_url %}
+                        <a href="{{ song.spotify_url }}" target="_blank" class="spotify-link">
+                          <i class="fab fa-spotify"></i>
+                        </a>
+                        {% endif %}
                       </li>
                       {% endfor %}
                     </ul>
@@ -547,13 +596,20 @@
                     <h6 class="text-muted">Top Artists</h6>
                     <ul class="list-group">
                       {% for artist in model_stats | selectattr("model",
-                      "equalto", model) | map(attribute="top_artists") | first
-                      %}
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-center"
-                      >
-                        {{ artist.artist }}
-                        <span class="count">{{ artist.count }}</span>
+                      "equalto", model) | map(attribute="top_artists") | first %}
+                      <li class="list-group-item">
+                        {% if artist.image_url %}
+                        <img src="{{ artist.image_url }}" alt="{{ artist.artist }}" class="item-image">
+                        {% endif %}
+                        <div class="item-info">
+                          <div class="item-name">{{ artist.artist }}</div>
+                        </div>
+                        <span class="item-count">{{ artist.count }}</span>
+                        {% if artist.spotify_url %}
+                        <a href="{{ artist.spotify_url }}" target="_blank" class="spotify-link">
+                          <i class="fab fa-spotify"></i>
+                        </a>
+                        {% endif %}
                       </li>
                       {% endfor %}
                     </ul>
