@@ -12,7 +12,7 @@ load_dotenv()
 
 # Define models
 MODELS = [
-    "anthropic/claude-3-5-haiku",
+    # "anthropic/claude-3-5-haiku",
     # "anthropic/claude-3.5-sonnet",
     # "anthropic/claude-3-opus",
     # "openai/chatgpt-4o-latest",
@@ -21,6 +21,7 @@ MODELS = [
     # "google/gemini-flash-1.5",
     # "meta-llama/llama-3.1-70b-instruct",
     # "meta-llama/llama-3.1-8b-instruct",
+    "meta-llama/llama-3.3-70b-instruct"
 ]
 
 # Number of runs per model

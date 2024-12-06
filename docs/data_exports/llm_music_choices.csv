@@ -28,7 +28,7 @@ anthropic/claude-3-5-haiku,20241122022038,Mad World,Gary Jules,neo mellow
 anthropic/claude-3-5-haiku,20241122022038,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
 anthropic/claude-3-5-haiku,20241122022038,The Sound of Silence,Simon & Garfunkel,Unknown
 anthropic/claude-3-5-haiku,20241122022038,Vienna,Billy Joel,Unknown
-anthropic/claude-3-5-haiku,20241122022038,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022038,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022041,Hurt,Johnny Cash,arkansas country; outlaw country; rock
 anthropic/claude-3-5-haiku,20241122022041,Creep,Radiohead,alternative rock; art rock; melancholia; oxford indie; permanent wave; rock
 anthropic/claude-3-5-haiku,20241122022041,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
@@ -63,7 +63,7 @@ anthropic/claude-3-5-haiku,20241122022050,Counting Stars,OneRepublic,Unknown
 anthropic/claude-3-5-haiku,20241122022050,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
 anthropic/claude-3-5-haiku,20241122022050,Rise Up,Andra Day,r&b
 anthropic/claude-3-5-haiku,20241122022050,Firework,Katy Perry,Unknown
-anthropic/claude-3-5-haiku,20241122022050,Believer,Imagine Dragons,Unknown
+anthropic/claude-3-5-haiku,20241122022050,Believer,Imagine Dragons,modern rock; pop; rock
 anthropic/claude-3-5-haiku,20241122022050,Fight Song,Rachel Platten,Unknown
 anthropic/claude-3-5-haiku,20241122022050,Hall of Fame,The Script,Unknown
 anthropic/claude-3-5-haiku,20241122022050,Roar,Katy Perry,Unknown
@@ -78,8 +78,8 @@ anthropic/claude-3-5-haiku,20241122022053,Fix You,Coldplay,permanent wave; pop
 anthropic/claude-3-5-haiku,20241122022053,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
 anthropic/claude-3-5-haiku,20241122022053,Sound of Silence,Simon & Garfunkel,Unknown
 anthropic/claude-3-5-haiku,20241122022053,Fake Plastic Trees,Radiohead,alternative rock; art rock; melancholia; oxford indie; permanent wave; rock
-anthropic/claude-3-5-haiku,20241122022053,Breathe Me,Sia,Unknown
-anthropic/claude-3-5-haiku,20241122022104,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022053,Breathe Me,Sia,pop
+anthropic/claude-3-5-haiku,20241122022104,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022104,Hurt,Johnny Cash,arkansas country; outlaw country; rock
 anthropic/claude-3-5-haiku,20241122022104,Fix You,Coldplay,permanent wave; pop
 anthropic/claude-3-5-haiku,20241122022104,The Sound of Silence,Disturbed,Unknown
@@ -97,7 +97,7 @@ anthropic/claude-3-5-haiku,20241122022107,The Sound of Silence,Simon & Garfunkel
 anthropic/claude-3-5-haiku,20241122022107,Everybody Hurts,R.E.M.,alternative rock; athens indie; permanent wave; rock
 anthropic/claude-3-5-haiku,20241122022107,Mad World,Gary Jules,neo mellow
 anthropic/claude-3-5-haiku,20241122022107,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
-anthropic/claude-3-5-haiku,20241122022107,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022107,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022107,Motion Sickness,Phoebe Bridgers,indie pop; la indie; pov: indie
 anthropic/claude-3-5-haiku,20241122022110,Hurt,Johnny Cash,arkansas country; outlaw country; rock
 anthropic/claude-3-5-haiku,20241122022110,Fix You,Coldplay,permanent wave; pop
@@ -108,7 +108,7 @@ anthropic/claude-3-5-haiku,20241122022110,Yesterday,The Beatles,british invasion
 anthropic/claude-3-5-haiku,20241122022110,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
 anthropic/claude-3-5-haiku,20241122022110,The Sound of Silence,Simon & Garfunkel,Unknown
 anthropic/claude-3-5-haiku,20241122022110,Everybody Hurts,R.E.M.,alternative rock; athens indie; permanent wave; rock
-anthropic/claude-3-5-haiku,20241122022110,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022110,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022113,Waves,Dean Lewis,Unknown
 anthropic/claude-3-5-haiku,20241122022113,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
 anthropic/claude-3-5-haiku,20241122022113,Fix You,Coldplay,permanent wave; pop
@@ -117,7 +117,7 @@ anthropic/claude-3-5-haiku,20241122022113,Hurt,Johnny Cash,arkansas country; out
 anthropic/claude-3-5-haiku,20241122022113,Hallelujah,Jeff Buckley,melancholia; permanent wave; singer-songwriter
 anthropic/claude-3-5-haiku,20241122022113,Someone You Loved,Lewis Capaldi,Unknown
 anthropic/claude-3-5-haiku,20241122022113,Falling Slowly,Glen Hansard,Unknown
-anthropic/claude-3-5-haiku,20241122022113,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022113,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022113,Mad World,Gary Jules,neo mellow
 anthropic/claude-3-5-haiku,20241122022116,Imagine,John Lennon,classic rock; rock
 anthropic/claude-3-5-haiku,20241122022116,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
@@ -158,7 +158,7 @@ anthropic/claude-3-5-haiku,20241122022125,Fix You,Coldplay,permanent wave; pop
 anthropic/claude-3-5-haiku,20241122022125,Everybody Hurts,R.E.M.,alternative rock; athens indie; permanent wave; rock
 anthropic/claude-3-5-haiku,20241122022125,Someone Like You,Adele,british soul; pop; pop soul; uk pop
 anthropic/claude-3-5-haiku,20241122022125,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
-anthropic/claude-3-5-haiku,20241122022125,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022125,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022128,Hurt,Johnny Cash,arkansas country; outlaw country; rock
 anthropic/claude-3-5-haiku,20241122022128,Fix You,Coldplay,permanent wave; pop
 anthropic/claude-3-5-haiku,20241122022128,Hallelujah,Jeff Buckley,melancholia; permanent wave; singer-songwriter
@@ -264,9 +264,9 @@ anthropic/claude-3-5-haiku,20241122022158,Stressed Out,Twenty One Pilots,Unknown
 anthropic/claude-3-5-haiku,20241122022158,Hurt,Johnny Cash,arkansas country; outlaw country; rock
 anthropic/claude-3-5-haiku,20241122022158,Rise Up,Andra Day,r&b
 anthropic/claude-3-5-haiku,20241122022158,The Sound of Silence,Disturbed,Unknown
-anthropic/claude-3-5-haiku,20241122022158,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022158,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022158,Fix You,Coldplay,permanent wave; pop
-anthropic/claude-3-5-haiku,20241122022158,Demons,Imagine Dragons,Unknown
+anthropic/claude-3-5-haiku,20241122022158,Demons,Imagine Dragons,modern rock; pop; rock
 anthropic/claude-3-5-haiku,20241122022158,Someone You Loved,Lewis Capaldi,Unknown
 anthropic/claude-3-5-haiku,20241122022158,Better Place,Rachel Platten,Unknown
 anthropic/claude-3-5-haiku,20241122022202,Stressed Out,Twenty One Pilots,Unknown
@@ -276,7 +276,7 @@ anthropic/claude-3-5-haiku,20241122022202,Rise Up,Andra Day,r&b
 anthropic/claude-3-5-haiku,20241122022202,The Sound of Silence,Disturbed,Unknown
 anthropic/claude-3-5-haiku,20241122022202,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
 anthropic/claude-3-5-haiku,20241122022202,Hurt,Johnny Cash,arkansas country; outlaw country; rock
-anthropic/claude-3-5-haiku,20241122022202,Demons,Imagine Dragons,Unknown
+anthropic/claude-3-5-haiku,20241122022202,Demons,Imagine Dragons,modern rock; pop; rock
 anthropic/claude-3-5-haiku,20241122022202,Weightless,Marconi Union,ambient
 anthropic/claude-3-5-haiku,20241122022202,Keep Your Head Up,Andy Grammer,Unknown
 anthropic/claude-3-5-haiku,20241122022205,Firework,Katy Perry,Unknown
@@ -312,7 +312,7 @@ anthropic/claude-3-5-haiku,20241122022210,All By Myself,Eric Carmen,Unknown
 anthropic/claude-3-5-haiku,20241122022214,Hurt,Johnny Cash,arkansas country; outlaw country; rock
 anthropic/claude-3-5-haiku,20241122022214,Fix You,Coldplay,permanent wave; pop
 anthropic/claude-3-5-haiku,20241122022214,Hallelujah,Jeff Buckley,melancholia; permanent wave; singer-songwriter
-anthropic/claude-3-5-haiku,20241122022214,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022214,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022214,Everybody Hurts,R.E.M.,alternative rock; athens indie; permanent wave; rock
 anthropic/claude-3-5-haiku,20241122022214,Someone Like You,Adele,british soul; pop; pop soul; uk pop
 anthropic/claude-3-5-haiku,20241122022214,Mad World,Gary Jules,neo mellow
@@ -339,14 +339,14 @@ anthropic/claude-3-5-haiku,20241122022220,Lua,Bright Eyes,chamber pop; indie roc
 anthropic/claude-3-5-haiku,20241122022220,Cherry Wine,Hozier,Unknown
 anthropic/claude-3-5-haiku,20241122022220,Saturn,Sleeping At Last,Unknown
 anthropic/claude-3-5-haiku,20241122022220,Lover Is a Day,Cuco,Unknown
-anthropic/claude-3-5-haiku,20241122022223,Believer,Imagine Dragons,Unknown
+anthropic/claude-3-5-haiku,20241122022223,Believer,Imagine Dragons,modern rock; pop; rock
 anthropic/claude-3-5-haiku,20241122022223,Rise Up,Andra Day,r&b
 anthropic/claude-3-5-haiku,20241122022223,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
 anthropic/claude-3-5-haiku,20241122022223,Stronger,Kelly Clarkson,Unknown
 anthropic/claude-3-5-haiku,20241122022223,Fight Song,Rachel Platten,Unknown
-anthropic/claude-3-5-haiku,20241122022223,Alive,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022223,Alive,Sia,pop
 anthropic/claude-3-5-haiku,20241122022223,Roar,Katy Perry,Unknown
-anthropic/claude-3-5-haiku,20241122022223,Unstoppable,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022223,Unstoppable,Sia,pop
 anthropic/claude-3-5-haiku,20241122022223,Hall of Fame,The Script,Unknown
 anthropic/claude-3-5-haiku,20241122022223,Firework,Katy Perry,Unknown
 anthropic/claude-3-5-haiku,20241122022226,Imagine,John Lennon,classic rock; rock
@@ -389,7 +389,7 @@ anthropic/claude-3-5-haiku,20241122022236,Can't Stop the Feeling!,Justin Timberl
 anthropic/claude-3-5-haiku,20241122022236,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-5-haiku,20241122022236,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-5-haiku,20241122022236,Firework,Katy Perry,Unknown
-anthropic/claude-3-5-haiku,20241122022239,Breathe Me,Sia,Unknown
+anthropic/claude-3-5-haiku,20241122022239,Breathe Me,Sia,pop
 anthropic/claude-3-5-haiku,20241122022239,The Sound of Silence,Disturbed,Unknown
 anthropic/claude-3-5-haiku,20241122022239,Fix You,Coldplay,permanent wave; pop
 anthropic/claude-3-5-haiku,20241122022239,Hallelujah,Jeff Buckley,melancholia; permanent wave; singer-songwriter
@@ -405,7 +405,7 @@ anthropic/claude-3-opus,20241121161002,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121161002,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-opus,20241121161002,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121161002,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-anthropic/claude-3-opus,20241121161002,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121161002,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121161002,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121161002,Sing,Ed Sheeran,pop; singer-songwriter pop; uk pop
 anthropic/claude-3-opus,20241121161002,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
@@ -414,7 +414,7 @@ anthropic/claude-3-opus,20241121161016,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121161016,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121161016,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 anthropic/claude-3-opus,20241121161016,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121161016,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121161016,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121161016,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 anthropic/claude-3-opus,20241121161016,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121161016,Viva La Vida,Coldplay,permanent wave; pop
@@ -462,7 +462,7 @@ anthropic/claude-3-opus,20241121161104,Can't Stop the Feeling!,Justin Timberlake
 anthropic/claude-3-opus,20241121161120,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121161120,Walking on Sunshine,Katrina and The Waves,new wave pop
 anthropic/claude-3-opus,20241121161120,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-anthropic/claude-3-opus,20241121161120,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121161120,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121161120,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 anthropic/claude-3-opus,20241121161120,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121161120,Shake It Off,Taylor Swift,pop
@@ -473,7 +473,7 @@ anthropic/claude-3-opus,20241121161132,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121161132,Walking on Sunshine,Katrina and The Waves,new wave pop
 anthropic/claude-3-opus,20241121161132,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 anthropic/claude-3-opus,20241121161132,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121161132,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121161132,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121161132,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121161132,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121161132,Don't Stop Me Now,Queen,classic rock; glam rock; rock
@@ -483,7 +483,7 @@ anthropic/claude-3-opus,20241121161145,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121161145,Walking on Sunshine,Katrina and The Waves,new wave pop
 anthropic/claude-3-opus,20241121161145,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 anthropic/claude-3-opus,20241121161145,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121161145,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121161145,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121161145,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121161145,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121161145,Don't Stop Me Now,Queen,classic rock; glam rock; rock
@@ -554,7 +554,7 @@ anthropic/claude-3-opus,20241121210841,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121210841,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121210841,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 anthropic/claude-3-opus,20241121210841,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121210841,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121210841,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121210841,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121210841,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121210841,Lovely Day,Bill Withers,classic soul; funk; quiet storm; soul
@@ -576,7 +576,7 @@ anthropic/claude-3-opus,20241121210903,Uptown Funk,Mark Ronson ft. Bruno Mars,da
 anthropic/claude-3-opus,20241121210903,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121210903,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121210903,Shake It Off,Taylor Swift,pop
-anthropic/claude-3-opus,20241121210903,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121210903,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121210903,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 anthropic/claude-3-opus,20241121210903,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-opus,20241121210914,Here Comes the Sun,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
@@ -584,7 +584,7 @@ anthropic/claude-3-opus,20241121210914,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121210914,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 anthropic/claude-3-opus,20241121210914,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 anthropic/claude-3-opus,20241121210914,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121210914,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121210914,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121210914,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121210914,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121210914,Shake It Off,Taylor Swift,pop
@@ -593,7 +593,7 @@ anthropic/claude-3-opus,20241121210925,Here Comes the Sun,The Beatles,british in
 anthropic/claude-3-opus,20241121210925,Walking on Sunshine,Katrina and The Waves,new wave pop
 anthropic/claude-3-opus,20241121210925,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121210925,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-anthropic/claude-3-opus,20241121210925,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121210925,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121210925,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121210925,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-opus,20241121210925,Dancing Queen,ABBA,europop; swedish pop
@@ -614,7 +614,7 @@ anthropic/claude-3-opus,20241121213332,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121213332,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121213332,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121213332,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-anthropic/claude-3-opus,20241121213332,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213332,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213332,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 anthropic/claude-3-opus,20241121213332,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121213332,Dancing Queen,ABBA,europop; swedish pop
@@ -624,7 +624,7 @@ anthropic/claude-3-opus,20241121213344,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121213344,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121213344,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121213344,Uptown Funk,Mark Ronson feat. Bruno Mars,Unknown
-anthropic/claude-3-opus,20241121213344,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213344,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213344,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 anthropic/claude-3-opus,20241121213344,Lovely Day,Bill Withers,classic soul; funk; quiet storm; soul
 anthropic/claude-3-opus,20241121213344,Dancing Queen,ABBA,europop; swedish pop
@@ -716,7 +716,7 @@ anthropic/claude-3-opus,20241121213523,Uptown Funk,Mark Ronson ft. Bruno Mars,da
 anthropic/claude-3-opus,20241121213523,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 anthropic/claude-3-opus,20241121213523,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-opus,20241121213523,Dancing Queen,ABBA,europop; swedish pop
-anthropic/claude-3-opus,20241121213523,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213523,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213523,Sing,Ed Sheeran,pop; singer-songwriter pop; uk pop
 anthropic/claude-3-opus,20241121213523,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 anthropic/claude-3-opus,20241121213533,Here Comes the Sun,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
@@ -724,7 +724,7 @@ anthropic/claude-3-opus,20241121213533,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121213533,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121213533,Uptown Funk,Mark Ronson feat. Bruno Mars,Unknown
 anthropic/claude-3-opus,20241121213533,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121213533,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213533,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213533,Don't Stop Me Now,Queen,classic rock; glam rock; rock
 anthropic/claude-3-opus,20241121213533,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121213533,Dancing Queen,ABBA,europop; swedish pop
@@ -754,7 +754,7 @@ anthropic/claude-3-opus,20241121213606,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121213606,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121213606,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 anthropic/claude-3-opus,20241121213606,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-anthropic/claude-3-opus,20241121213606,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213606,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213606,Somewhere Over the Rainbow,Israel Kamakawiwo'ole,Unknown
 anthropic/claude-3-opus,20241121213606,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121213606,Lovely Day,Bill Withers,classic soul; funk; quiet storm; soul
@@ -764,7 +764,7 @@ anthropic/claude-3-opus,20241121213618,Walking on Sunshine,Katrina and The Waves
 anthropic/claude-3-opus,20241121213618,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121213618,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 anthropic/claude-3-opus,20241121213618,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-anthropic/claude-3-opus,20241121213618,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213618,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213618,"Don't Worry, Be Happy",Bobby McFerrin,Unknown
 anthropic/claude-3-opus,20241121213618,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-opus,20241121213618,Lovely Day,Bill Withers,classic soul; funk; quiet storm; soul
@@ -775,7 +775,7 @@ anthropic/claude-3-opus,20241121213629,Happy,Pharrell Williams,dance pop; pop
 anthropic/claude-3-opus,20241121213629,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 anthropic/claude-3-opus,20241121213629,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
 anthropic/claude-3-opus,20241121213629,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-anthropic/claude-3-opus,20241121213629,I Gotta Feeling,The Black Eyed Peas,Unknown
+anthropic/claude-3-opus,20241121213629,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 anthropic/claude-3-opus,20241121213629,Dancing Queen,ABBA,europop; swedish pop
 anthropic/claude-3-opus,20241121213629,Shake It Off,Taylor Swift,pop
 anthropic/claude-3-opus,20241121213629,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
@@ -893,7 +893,7 @@ anthropic/claude-3.5-sonnet,20241121160948,Walking on Sunshine,Katrina & The Wav
 anthropic/claude-3.5-sonnet,20241121160948,Here Comes the Sun,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
 anthropic/claude-3.5-sonnet,20241121160948,Digital Love,Daft Punk,electro; filter house; rock
 anthropic/claude-3.5-sonnet,20241121160948,Mr. Blue Sky,Electric Light Orchestra,album rock; art rock; beatlesque; classic rock; glam rock; mellow gold; rock; soft rock; symphonic rock
-anthropic/claude-3.5-sonnet,20241121160948,Imagination,Foster the People,Unknown
+anthropic/claude-3.5-sonnet,20241121160948,Imagination,Foster the People,indietronica; modern alternative rock; modern rock; rock
 anthropic/claude-3.5-sonnet,20241121160948,Best Day of My Life,American Authors,modern rock; pop rock
 anthropic/claude-3.5-sonnet,20241121160948,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 anthropic/claude-3.5-sonnet,20241121160948,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
@@ -945,7 +945,7 @@ anthropic/claude-3.5-sonnet,20241121210621,Digital Love,Daft Punk,electro; filte
 anthropic/claude-3.5-sonnet,20241121210621,Curiosity,Carly Rae Jepsen,Unknown
 anthropic/claude-3.5-sonnet,20241121210621,Electric Feel,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 anthropic/claude-3.5-sonnet,20241121210621,Wonder,Madeon,Unknown
-anthropic/claude-3.5-sonnet,20241121210621,Believer,Imagine Dragons,Unknown
+anthropic/claude-3.5-sonnet,20241121210621,Believer,Imagine Dragons,modern rock; pop; rock
 anthropic/claude-3.5-sonnet,20241121210621,Instant Crush,Daft Punk ft. Julian Casablancas,Unknown
 anthropic/claude-3.5-sonnet,20241121210621,Think,Aretha Franklin,classic soul; jazz blues; memphis soul; soul; southern soul; vocal jazz
 anthropic/claude-3.5-sonnet,20241121210621,Binary Sunset,John Williams,Unknown
@@ -1608,7 +1608,7 @@ meta-llama/llama-3.1-70b-instruct,20241122003009,Happier,Marshmello & Bastille,U
 meta-llama/llama-3.1-70b-instruct,20241122003009,Unconditionally,Katy Perry,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003009,Take Me to Church,Hozier,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003009,Landslide,Oh Wonder,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122003009,Breathe Me,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003009,Breathe Me,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122003012,Rainy Days and Mondays,The Carpenters,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003012,Mad World,Gary Jules,neo mellow
 meta-llama/llama-3.1-70b-instruct,20241122003012,The Sound of Silence,Simon & Garfunkel,Unknown
@@ -1686,9 +1686,9 @@ meta-llama/llama-3.1-70b-instruct,20241122003120,I Gotta Feeling,Black Eyed Peas
 meta-llama/llama-3.1-70b-instruct,20241122003120,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122003120,Best Day of My Life,American Authors,modern rock; pop rock
 meta-llama/llama-3.1-70b-instruct,20241122003120,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-meta-llama/llama-3.1-70b-instruct,20241122003120,On Top of the World,Imagine Dragons,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003120,On Top of the World,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-70b-instruct,20241122003120,We Will Rock You,Queen,classic rock; glam rock; rock
-meta-llama/llama-3.1-70b-instruct,20241122003120,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003120,Unstoppable,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122003123,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
 meta-llama/llama-3.1-70b-instruct,20241122003123,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
 meta-llama/llama-3.1-70b-instruct,20241122003123,Clocks,Coldplay,permanent wave; pop
@@ -1715,8 +1715,8 @@ meta-llama/llama-3.1-70b-instruct,20241122003134,Best Day of My Life,American Au
 meta-llama/llama-3.1-70b-instruct,20241122003134,Happy,Pharrell Williams,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122003134,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122003134,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-meta-llama/llama-3.1-70b-instruct,20241122003134,I Gotta Feeling,The Black Eyed Peas,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122003134,Pumped Up Kicks,Foster the People,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003134,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.1-70b-instruct,20241122003134,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
 meta-llama/llama-3.1-70b-instruct,20241122003134,Shut Up and Dance,Walk the Moon,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003134,All About That Bass,Meghan Trainor,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003142,Stressed Out,Twenty One Pilots,Unknown
@@ -1724,8 +1724,8 @@ meta-llama/llama-3.1-70b-instruct,20241122003142,Electric,Alina Baraz feat. Khal
 meta-llama/llama-3.1-70b-instruct,20241122003142,Feel Good Inc.,Gorillaz,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003142,Happier,"Marshmello, Bastille",Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003142,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-meta-llama/llama-3.1-70b-instruct,20241122003142,On Top of the World,Imagine Dragons,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122003142,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003142,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.1-70b-instruct,20241122003142,Unstoppable,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122003142,Best Day of My Life,American Authors,modern rock; pop rock
 meta-llama/llama-3.1-70b-instruct,20241122003142,We Found Love,Rihanna (feat. Calvin Harris),Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003142,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
@@ -1750,7 +1750,7 @@ meta-llama/llama-3.1-70b-instruct,20241122003149,Clocks,Coldplay,permanent wave;
 meta-llama/llama-3.1-70b-instruct,20241122003149,Landslide,Fleetwood Mac,album rock; classic rock; rock; soft rock; yacht rock
 meta-llama/llama-3.1-70b-instruct,20241122003149,Weightless,Marconi Union,ambient
 meta-llama/llama-3.1-70b-instruct,20241122003152,Stressed Out,Twenty One Pilots,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122003152,Breathe Me,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003152,Breathe Me,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122003152,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
 meta-llama/llama-3.1-70b-instruct,20241122003152,Mad World,Gary Jules,neo mellow
 meta-llama/llama-3.1-70b-instruct,20241122003152,Hurt,Johnny Cash,arkansas country; outlaw country; rock
@@ -1765,8 +1765,8 @@ meta-llama/llama-3.1-70b-instruct,20241122003159,Best Day of My Life,American Au
 meta-llama/llama-3.1-70b-instruct,20241122003159,I Gotta Feeling,Black Eyed Peas,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003159,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122003159,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-meta-llama/llama-3.1-70b-instruct,20241122003159,On Top of the World,Imagine Dragons,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122003159,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003159,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.1-70b-instruct,20241122003159,Unstoppable,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122003159,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
 meta-llama/llama-3.1-70b-instruct,20241122003159,We Are Young,Fun. ft. Janelle Monae,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003203,Lullaby,The Cure,Unknown
@@ -1853,11 +1853,11 @@ meta-llama/llama-3.1-70b-instruct,20241122003250,Happy,Pharrell Williams,dance p
 meta-llama/llama-3.1-70b-instruct,20241122003250,Walking on Sunshine,Katherine D,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003250,Here Comes the Sun,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
 meta-llama/llama-3.1-70b-instruct,20241122003250,Best Day of My Life,American Authors,modern rock; pop rock
-meta-llama/llama-3.1-70b-instruct,20241122003250,I Gotta Feeling,The Black Eyed Peas,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003250,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 meta-llama/llama-3.1-70b-instruct,20241122003250,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122003250,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-meta-llama/llama-3.1-70b-instruct,20241122003250,On Top of the World,Imagine Dragons,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122003250,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122003250,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.1-70b-instruct,20241122003250,Unstoppable,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122003250,We Are Young,Fun. ft. Janelle Monáe,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122003252,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
 meta-llama/llama-3.1-70b-instruct,20241122003252,Viva la Vida,Coldplay,permanent wave; pop
@@ -1893,7 +1893,7 @@ meta-llama/llama-3.1-70b-instruct,20241122004841,Happier,Marshmello & Bastille,U
 meta-llama/llama-3.1-70b-instruct,20241122004841,Stressed Out,Twenty One Pilots,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004841,See You Again,Wiz Khalifa ft. Charlie Puth,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004841,Without Me,Halsey,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122004841,Demons,Imagine Dragons,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004841,Demons,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-70b-instruct,20241122004841,Til It Happens to You,Lady Gaga,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004841,Scars to Your Beautiful,Alessia Cara,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004841,Tears Don't Fall,Bullet For My Valentine,Unknown
@@ -1915,7 +1915,7 @@ meta-llama/llama-3.1-70b-instruct,20241122004852,Uptown Funk,Mark Ronson ft. Bru
 meta-llama/llama-3.1-70b-instruct,20241122004852,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122004852,Walking on Sunshine,Katrina & The Waves,new wave pop
 meta-llama/llama-3.1-70b-instruct,20241122004852,I Gotta Feeling,Black Eyed Peas,Unknown
-meta-llama/llama-3.1-70b-instruct,20241122004852,On Top of the World,Imagine Dragons,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004852,On Top of the World,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-70b-instruct,20241122004852,Best Day of My Life,American Authors,modern rock; pop rock
 meta-llama/llama-3.1-70b-instruct,20241122004852,Unwritten,Natasha Bedingfield,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004852,We Are Young,Fun. ft. Janelle Monáe,Unknown
@@ -1945,20 +1945,20 @@ meta-llama/llama-3.1-70b-instruct,20241122004907,Hysteria,Muse,alternative rock;
 meta-llama/llama-3.1-70b-instruct,20241122004907,Clocks,Coldplay,permanent wave; pop
 meta-llama/llama-3.1-70b-instruct,20241122004907,Blackbird,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
 meta-llama/llama-3.1-70b-instruct,20241122004907,Fake Plastic Trees,Radiohead,alternative rock; art rock; melancholia; oxford indie; permanent wave; rock
-meta-llama/llama-3.1-70b-instruct,20241122004907,Breathe Me,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004907,Breathe Me,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122004907,Viva La Vida,Coldplay,permanent wave; pop
 meta-llama/llama-3.1-70b-instruct,20241122004907,Sweet Disposition,The Temper Trap,indietronica; modern rock; shimmer pop
 meta-llama/llama-3.1-70b-instruct,20241122004907,Fade to Black,Metallica,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004913,Walking on Sunshine,Katrina & The Waves,new wave pop
 meta-llama/llama-3.1-70b-instruct,20241122004913,Here Comes the Sun,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
 meta-llama/llama-3.1-70b-instruct,20241122004913,Happy,Pharrell Williams,dance pop; pop
-meta-llama/llama-3.1-70b-instruct,20241122004913,I Gotta Feeling,The Black Eyed Peas,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004913,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 meta-llama/llama-3.1-70b-instruct,20241122004913,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122004913,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 meta-llama/llama-3.1-70b-instruct,20241122004913,Best Day of My Life,American Authors,modern rock; pop rock
-meta-llama/llama-3.1-70b-instruct,20241122004913,On Top of the World,Imagine Dragons,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004913,On Top of the World,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-70b-instruct,20241122004913,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
-meta-llama/llama-3.1-70b-instruct,20241122004913,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004913,Unstoppable,Sia,pop
 meta-llama/llama-3.1-70b-instruct,20241122004920,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
 meta-llama/llama-3.1-70b-instruct,20241122004920,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
 meta-llama/llama-3.1-70b-instruct,20241122004920,Tornado of Souls,Megadeth,Unknown
@@ -1973,7 +1973,7 @@ meta-llama/llama-3.1-70b-instruct,20241122004928,Space Oddity,David Bowie,art ro
 meta-llama/llama-3.1-70b-instruct,20241122004928,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
 meta-llama/llama-3.1-70b-instruct,20241122004928,Viva la Vida,Coldplay,permanent wave; pop
 meta-llama/llama-3.1-70b-instruct,20241122004928,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
-meta-llama/llama-3.1-70b-instruct,20241122004928,Radioactive,Imagine Dragons,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004928,Radioactive,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-70b-instruct,20241122004928,Tears in Heaven,Eric Clapton,album rock; blues rock; classic rock; electric blues; mellow gold; rock; singer-songwriter; soft rock
 meta-llama/llama-3.1-70b-instruct,20241122004928,Somebody to Love,Queen,classic rock; glam rock; rock
 meta-llama/llama-3.1-70b-instruct,20241122004928,Bulls on Parade,Rage Against the Machine,Unknown
@@ -1984,7 +1984,7 @@ meta-llama/llama-3.1-70b-instruct,20241122004942,Hysteria,Muse,alternative rock;
 meta-llama/llama-3.1-70b-instruct,20241122004942,Mr. Blue Sky,Electric Light Orchestra,album rock; art rock; beatlesque; classic rock; glam rock; mellow gold; rock; soft rock; symphonic rock
 meta-llama/llama-3.1-70b-instruct,20241122004942,Sweet Disposition,The Temper Trap,indietronica; modern rock; shimmer pop
 meta-llama/llama-3.1-70b-instruct,20241122004942,Best Day of My Life,American Authors,modern rock; pop rock
-meta-llama/llama-3.1-70b-instruct,20241122004942,On Top of the World,Imagine Dragons,Unknown
+meta-llama/llama-3.1-70b-instruct,20241122004942,On Top of the World,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-70b-instruct,20241122004942,Centuries,Fall Out Boy,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004942,Unwritten,Natasha Bedingfield,Unknown
 meta-llama/llama-3.1-70b-instruct,20241122004942,Brilliant,Feeder,Unknown
@@ -1996,9 +1996,9 @@ meta-llama/llama-3.1-8b-instruct,20241122003306,We Are the Champions,Queen,class
 meta-llama/llama-3.1-8b-instruct,20241122003306,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003306,Shut Up and Dance,Walk the Moon,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003306,Happy,Pharrell Williams,dance pop; pop
-meta-llama/llama-3.1-8b-instruct,20241122003306,I Gotta Feeling,The Black Eyed Peas,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003306,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 meta-llama/llama-3.1-8b-instruct,20241122003306,Best Day of My Life,American Authors,modern rock; pop rock
-meta-llama/llama-3.1-8b-instruct,20241122003306,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003306,Unstoppable,Sia,pop
 meta-llama/llama-3.1-8b-instruct,20241122003309,Loser,Beck,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003309,Street Spirit,Radiohead,alternative rock; art rock; melancholia; oxford indie; permanent wave; rock
 meta-llama/llama-3.1-8b-instruct,20241122003309,Viva la Vida,Coldplay,permanent wave; pop
@@ -2063,7 +2063,7 @@ meta-llama/llama-3.1-8b-instruct,20241122003325,Can't Stop the Feeling!,Justin T
 meta-llama/llama-3.1-8b-instruct,20241122003325,Sweet but Psycho,Ava Max,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003325,Shut Up and Dance,Walk the Moon,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003325,We Found Love,Rihanna ft. Calvin Harris,Unknown
-meta-llama/llama-3.1-8b-instruct,20241122003325,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003325,Unstoppable,Sia,pop
 meta-llama/llama-3.1-8b-instruct,20241122003329,Weightless,Marconi Union,ambient
 meta-llama/llama-3.1-8b-instruct,20241122003329,Sea of Love,Cat Power and The Gaslight Tapes,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003329,Sleep,MAX Graham (feat. Naden),Unknown
@@ -2083,7 +2083,7 @@ meta-llama/llama-3.1-8b-instruct,20241122003332,Sweet Disposition,The Temper Tra
 meta-llama/llama-3.1-8b-instruct,20241122003332,Mr. Brightside,The Killers,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003332,Can't Stop,Red Hot Chili Peppers,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003332,Shut Up and Dance,Walk the Moon,Unknown
-meta-llama/llama-3.1-8b-instruct,20241122003332,I Gotta Feeling,The Black Eyed Peas,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003332,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 meta-llama/llama-3.1-8b-instruct,20241122003334,Clair de Lune,Claude Debussy,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003334,River Flows in You,Yiruma,korean instrumental; neo-classical; new age piano
 meta-llama/llama-3.1-8b-instruct,20241122003334,Stay with Me,Sam Smith,Unknown
@@ -2109,7 +2109,7 @@ meta-llama/llama-3.1-8b-instruct,20241122003339,Viva la Vida,Coldplay,permanent 
 meta-llama/llama-3.1-8b-instruct,20241122003339,Someone Like You,Adele,british soul; pop; pop soul; uk pop
 meta-llama/llama-3.1-8b-instruct,20241122003339,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003339,Stay with Me,Sam Smith,Unknown
-meta-llama/llama-3.1-8b-instruct,20241122003339,Radioactive,Imagine Dragons,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003339,Radioactive,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-8b-instruct,20241122003339,Counting Stars,OneRepublic,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003339,All About That Bass,Meghan Trainor,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003339,Best Day of My Life,American Authors,modern rock; pop rock
@@ -2117,7 +2117,7 @@ meta-llama/llama-3.1-8b-instruct,20241122003339,Shut Up and Dance,Walk the Moon,
 meta-llama/llama-3.1-8b-instruct,20241122003342,Lose Yourself,Eminem,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003342,Tenerife Sea,Ed Sheeran,pop; singer-songwriter pop; uk pop
 meta-llama/llama-3.1-8b-instruct,20241122003342,Stay with Me,Sam Smith,Unknown
-meta-llama/llama-3.1-8b-instruct,20241122003342,Radioactive,Imagine Dragons,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003342,Radioactive,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-8b-instruct,20241122003342,Sweet Disposition,The Temper Trap,indietronica; modern rock; shimmer pop
 meta-llama/llama-3.1-8b-instruct,20241122003342,Home,Edward Sharpe & The Magnetic Zeros,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003342,First Day of My Life,Bright Eyes,chamber pop; indie rock; melancholia; omaha indie; stomp and holler
@@ -2160,7 +2160,7 @@ meta-llama/llama-3.1-8b-instruct,20241122003401,Uptown Funk,Mark Ronson ft. Brun
 meta-llama/llama-3.1-8b-instruct,20241122003401,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003401,I Gotta Feeling,Black Eyed Peas,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003401,Best Day of My Life,American Authors,modern rock; pop rock
-meta-llama/llama-3.1-8b-instruct,20241122003401,On Top of the World,Imagine Dragons,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003401,On Top of the World,Imagine Dragons,modern rock; pop; rock
 meta-llama/llama-3.1-8b-instruct,20241122003401,Brick House,The Commodores,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003401,I Want It That Way,Backstreet Boys,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003401,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
@@ -2289,11 +2289,11 @@ meta-llama/llama-3.1-8b-instruct,20241122003443,Here Comes the Sun,The Beatles,b
 meta-llama/llama-3.1-8b-instruct,20241122003443,Sunny Afternoon,The Kinks,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003443,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003443,Happy,Pharrell Williams,dance pop; pop
-meta-llama/llama-3.1-8b-instruct,20241122003443,I Gotta Feeling,The Black Eyed Peas,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003443,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 meta-llama/llama-3.1-8b-instruct,20241122003443,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003443,Best Day of My Life,American Authors,modern rock; pop rock
 meta-llama/llama-3.1-8b-instruct,20241122003443,I'm a Believer,The Monkees,Unknown
-meta-llama/llama-3.1-8b-instruct,20241122003443,Unstoppable,Sia,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003443,Unstoppable,Sia,pop
 meta-llama/llama-3.1-8b-instruct,20241122003445,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
 meta-llama/llama-3.1-8b-instruct,20241122003445,Viva la Vida,Coldplay,permanent wave; pop
 meta-llama/llama-3.1-8b-instruct,20241122003445,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
@@ -2316,11 +2316,11 @@ meta-llama/llama-3.1-8b-instruct,20241122003449,Knee Deep,Zac Brown Band,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003449,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
 meta-llama/llama-3.1-8b-instruct,20241122003452,Happy,Pharrell Williams,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003452,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-meta-llama/llama-3.1-8b-instruct,20241122003452,I Gotta Feeling,The Black Eyed Peas,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003452,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 meta-llama/llama-3.1-8b-instruct,20241122003452,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 meta-llama/llama-3.1-8b-instruct,20241122003452,Best Day of My Life,American Authors,modern rock; pop rock
-meta-llama/llama-3.1-8b-instruct,20241122003452,On Top of the World,Imagine Dragons,Unknown
-meta-llama/llama-3.1-8b-instruct,20241122003452,Braver,Sia,Unknown
+meta-llama/llama-3.1-8b-instruct,20241122003452,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.1-8b-instruct,20241122003452,Braver,Sia,pop
 meta-llama/llama-3.1-8b-instruct,20241122003452,Roar,Katy Perry,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003452,We Found Love,Rihanna ft. Calvin Harris,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003452,Stronger,Britney Spears,Unknown
@@ -2344,6 +2344,406 @@ meta-llama/llama-3.1-8b-instruct,20241122003500,Breathe Me,Polvo Process,Unknown
 meta-llama/llama-3.1-8b-instruct,20241122003500,Across the Universe,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
 meta-llama/llama-3.1-8b-instruct,20241122003500,Fast Car,Tracy Chapman,folk; lilith; singer-songwriter; women's music
 meta-llama/llama-3.1-8b-instruct,20241122003500,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
+meta-llama/llama-3.3-70b-instruct,20241206211554,Electric,Alina Baraz feat. Khalid,turkish pop
+meta-llama/llama-3.3-70b-instruct,20241206211554,Get You,Daniel Caesar,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,Lost Without You,Robin Thicke,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,Sober,Childish Gambino,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,Eastside,"Benny Blanco, Halsey, Khalid",Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,Without Me,Halsey,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,When The Party's Over,Billie Eilish,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,Let Me Down Slowly,Alec Benjamin,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,I'm Not The Only One,Sam Smith,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211554,Treat You Better,Shawn Mendes,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211557,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211557,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211557,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211557,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211557,Best of You,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211557,Chasing Cars,Snow Patrol,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211557,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211557,Bulls on Parade,Rage Against the Machine,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211557,Tornado of Souls,Megadeth,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211557,Paradise,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211602,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211602,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211602,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211602,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211602,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211602,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211602,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211602,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211602,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211602,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211605,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211605,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211605,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211605,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211605,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211605,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211605,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211605,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211605,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211605,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211610,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211610,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211610,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211610,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211610,Iris,Goo Goo Dolls,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211610,Torn,Natalie Imbruglia,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211610,Breathe Me,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211610,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
+meta-llama/llama-3.3-70b-instruct,20241206211610,Fast Car,Tracy Chapman,folk; lilith; singer-songwriter; women's music
+meta-llama/llama-3.3-70b-instruct,20241206211610,Mad World,Gary Jules,neo mellow
+meta-llama/llama-3.3-70b-instruct,20241206211613,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211613,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211613,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211613,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211613,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211613,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211613,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211613,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211613,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211613,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211616,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211616,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211616,Imagine,John Lennon,classic rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211616,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211616,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211616,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211616,Sweet Child O Mine,Guns N Roses,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211616,We Are the Champions,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211616,I Will Always Love You,Whitney Houston,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211616,My Way,Frank Sinatra,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211621,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211621,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211621,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211621,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211621,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211621,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211621,Sweet Child O Mine,Guns N Roses,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211621,Livin on a Prayer,Bon Jovi,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211621,We Are the Champions,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211621,Back in Black,ACDC,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211625,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211625,Happier,Ed Sheeran,pop; singer-songwriter pop; uk pop
+meta-llama/llama-3.3-70b-instruct,20241206211625,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211625,Sweet Disposition,The Temper Trap,indietronica; modern rock; shimmer pop
+meta-llama/llama-3.3-70b-instruct,20241206211625,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211625,Shut Up and Dance,Walk the Moon,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211625,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211625,Unsteady,X Ambassadors,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211625,First Day of My Life,Bright Eyes,chamber pop; indie rock; melancholia; omaha indie; stomp and holler
+meta-llama/llama-3.3-70b-instruct,20241206211625,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211626,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211626,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211626,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211626,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211626,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211626,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211626,Sweet Child O Mine,Guns N Roses,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211626,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211626,Mr Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211626,Livin on a Prayer,Bon Jovi,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,Yesterday,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211628,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211628,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211628,Numb,Linkin Park,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,Tornado of Souls,Megadeth,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,Cemetery Gates,Pantera,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,Fade to Black,Metallica,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,Black No. 1 (Little Miss Scare-All),Type O Negative,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,The Day That Never Comes,Metallica,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211628,Bulls on Parade,Rage Against the Machine,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211630,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211630,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211630,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211630,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211630,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211630,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211630,Sweet Child O Mine,Guns N Roses,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211630,Livin on a Prayer,Bon Jovi,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211630,Barracuda,Heart,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211630,Back in Black,AC/DC,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211632,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211632,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211632,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211632,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211632,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211632,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211632,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211632,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211632,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211632,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211635,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211635,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211635,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211635,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211635,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211635,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211635,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211635,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211635,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211635,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211639,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211639,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211639,I'm Yours,Jason Mraz,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211639,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211639,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211639,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211639,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211639,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211639,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211639,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211643,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211643,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211643,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211643,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211643,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211643,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211643,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211643,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211643,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211643,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211646,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211646,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211646,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211646,Walking on Sunshine,Katrina & The Waves,new wave pop
+meta-llama/llama-3.3-70b-instruct,20241206211646,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211646,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211646,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211646,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211646,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211646,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211650,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211650,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211650,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211650,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211650,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211650,Walking on Sunshine,Katherine D,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211650,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211650,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211650,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211650,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211653,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211653,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211653,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211653,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211653,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211653,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211653,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211653,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211653,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211653,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211657,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211657,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211657,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211657,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211657,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211657,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211657,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211657,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211657,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211657,We Are Young,Fun. ft. Janelle Monáe,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211700,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211700,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211700,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211700,Can't Stop,Red Hot Chili Peppers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211700,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211700,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211700,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211700,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211700,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211700,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211704,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211704,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211704,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211704,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211704,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211704,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211704,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211704,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211704,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211704,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211707,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211707,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211707,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211707,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211707,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211707,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211707,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211707,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211707,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211707,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211710,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211710,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211710,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211710,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211710,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211710,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211710,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211710,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211710,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211710,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211714,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211714,Mr. Blue Sky,Electric Light Orchestra,album rock; art rock; beatlesque; classic rock; glam rock; mellow gold; rock; soft rock; symphonic rock
+meta-llama/llama-3.3-70b-instruct,20241206211714,I'm Yours,Jason Mraz,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211714,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211714,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211714,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211714,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211714,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211714,We Are Young,Fun. ft. Janelle Monae,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211714,Unwritten,Natasha Bedingfield,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211716,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211716,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211716,I'm Yours,Jason Mraz,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211716,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211716,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211716,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211716,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211716,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211716,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211716,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211720,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211720,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211720,Tornado of Souls,Megadeth,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211720,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211720,Bulls on Parade,Rage Against the Machine,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211720,Back in Black,AC/DC,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211720,Schism,Tool,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211720,Chop Suey!,System of a Down,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211720,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211720,Voodoo People,The Prodigy,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211724,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211724,Happier,Marshmello and Bastille,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211724,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211724,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211724,Stay with Me,Sam Smith,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211724,Sweet Disposition,The Temper Trap,indietronica; modern rock; shimmer pop
+meta-llama/llama-3.3-70b-instruct,20241206211724,First Day of My Life,Bright Eyes,chamber pop; indie rock; melancholia; omaha indie; stomp and holler
+meta-llama/llama-3.3-70b-instruct,20241206211724,I Will Follow You into the Dark,Death Cab for Cutie,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211724,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
+meta-llama/llama-3.3-70b-instruct,20241206211724,Holocene,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
+meta-llama/llama-3.3-70b-instruct,20241206211725,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211725,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211725,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211725,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211725,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211725,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211725,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211725,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211725,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211725,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211728,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211728,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211728,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211728,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211728,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211728,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211728,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211728,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211728,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211728,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211730,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211730,Mr. Brightside,The Killers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211730,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211730,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211730,Torn,Natalie Imbruglia,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211730,Iris,Goo Goo Dolls,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211730,Hallelujah,Jeff Buckley,melancholia; permanent wave; singer-songwriter
+meta-llama/llama-3.3-70b-instruct,20241206211730,Chasing Cars,Snow Patrol,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211730,Ho Hey,The Lumineers,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211730,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Blackbird,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211731,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211731,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211731,Sweet Child O Mine,Guns N Roses,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211731,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211735,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211735,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211735,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211735,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211735,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211735,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211735,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211735,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211735,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211735,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211739,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211739,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211739,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211739,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211739,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211739,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211739,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211739,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211739,We Will Rock You,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211739,Celebration,Kool & The Gang,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211742,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211742,Mr. Blue Sky,Electric Light Orchestra,album rock; art rock; beatlesque; classic rock; glam rock; mellow gold; rock; soft rock; symphonic rock
+meta-llama/llama-3.3-70b-instruct,20241206211742,Clocks,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211742,Yellow,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211742,Viva La Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211742,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211742,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211742,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211742,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211742,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211744,Hotel California,Eagles,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211744,Stairway to Heaven,Led Zeppelin,album rock; classic rock; hard rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211744,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211744,Imagine,John Lennon,classic rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211744,Viva la Vida,Coldplay,permanent wave; pop
+meta-llama/llama-3.3-70b-instruct,20241206211744,Smells Like Teen Spirit,Nirvana,grunge; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211744,We Are the Champions,Queen,classic rock; glam rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211744,Back in Black,AC/DC,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211744,Sweet Child O Mine,Guns N Roses,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211744,Let It Be,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211748,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211748,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211748,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211748,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211748,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211748,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211748,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211748,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211748,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211748,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Everlong,Foo Fighters,alternative metal; alternative rock; modern rock; permanent wave; post-grunge; rock
+meta-llama/llama-3.3-70b-instruct,20241206211752,Hysteria,Muse,alternative rock; modern rock; permanent wave; rock
+meta-llama/llama-3.3-70b-instruct,20241206211752,Tornado of Souls,Megadeth,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Bulls on Parade,Rage Against the Machine,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Chop Suey!,System of a Down,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Last Resort,Papa Roach,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Breaking the Law,Judas Priest,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Cemetery Gates,Pantera,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Master of Puppets,Metallica,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211752,Back in Black,AC/DC,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211756,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211756,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211756,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211756,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211756,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211756,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211756,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211756,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211756,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211756,Roar,Katy Perry,Unknown
+meta-llama/llama-3.3-70b-instruct,20241206211800,Happy,Pharrell Williams,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211800,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211800,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
+meta-llama/llama-3.3-70b-instruct,20241206211800,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
+meta-llama/llama-3.3-70b-instruct,20241206211800,Pumped Up Kicks,Foster the People,indietronica; modern alternative rock; modern rock; rock
+meta-llama/llama-3.3-70b-instruct,20241206211800,Best Day of My Life,American Authors,modern rock; pop rock
+meta-llama/llama-3.3-70b-instruct,20241206211800,On Top of the World,Imagine Dragons,modern rock; pop; rock
+meta-llama/llama-3.3-70b-instruct,20241206211800,Unstoppable,Sia,pop
+meta-llama/llama-3.3-70b-instruct,20241206211800,Brave,Sara Bareilles,acoustic pop; lilith; neo mellow; pop rock; post-teen pop
+meta-llama/llama-3.3-70b-instruct,20241206211800,Roar,Katy Perry,Unknown
 openai/chatgpt-4o-latest,20241121161159,Lost Cause,Billie Eilish,Unknown
 openai/chatgpt-4o-latest,20241121161159,The Less I Know The Better,Tame Impala,Unknown
 openai/chatgpt-4o-latest,20241121161159,Motion Sickness,Phoebe Bridgers,indie pop; la indie; pov: indie
@@ -2429,7 +2829,7 @@ openai/chatgpt-4o-latest,20241121161255,Fix You,Coldplay,permanent wave; pop
 openai/chatgpt-4o-latest,20241121161255,Blinding Lights,The Weeknd,canadian contemporary r&b; canadian pop; pop
 openai/chatgpt-4o-latest,20241121161255,Electric Feel,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 openai/chatgpt-4o-latest,20241121161255,Dreams,Fleetwood Mac,album rock; classic rock; rock; soft rock; yacht rock
-openai/chatgpt-4o-latest,20241121161255,On Top of the World,Imagine Dragons,Unknown
+openai/chatgpt-4o-latest,20241121161255,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/chatgpt-4o-latest,20241121161255,Dog Days Are Over,Florence + The Machine,Unknown
 openai/chatgpt-4o-latest,20241121161255,Here Comes the Sun,The Beatles,british invasion; classic rock; merseybeat; psychedelic rock; rock
 openai/chatgpt-4o-latest,20241121161255,Young Folks,Peter Bjorn and John,Unknown
@@ -2526,7 +2926,7 @@ openai/chatgpt-4o-latest,20241121210949,The Less I Know the Better,Tame Impala,U
 openai/chatgpt-4o-latest,20241121210949,Hide and Seek,Imogen Heap,Unknown
 openai/chatgpt-4o-latest,20241121210951,Spectrum (Say My Name),Florence + The Machine & Calvin Harris,Unknown
 openai/chatgpt-4o-latest,20241121210951,Electric Feel,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
-openai/chatgpt-4o-latest,20241121210951,Houdini,Foster the People,Unknown
+openai/chatgpt-4o-latest,20241121210951,Houdini,Foster the People,indietronica; modern alternative rock; modern rock; rock
 openai/chatgpt-4o-latest,20241121210951,Little Dark Age,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 openai/chatgpt-4o-latest,20241121210951,Time to Pretend,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 openai/chatgpt-4o-latest,20241121210951,Midnight City,M83,Unknown
@@ -2562,7 +2962,7 @@ openai/chatgpt-4o-latest,20241121213656,Float On,Modest Mouse,Unknown
 openai/chatgpt-4o-latest,20241121213656,Dreams,Fleetwood Mac,album rock; classic rock; rock; soft rock; yacht rock
 openai/chatgpt-4o-latest,20241121213656,Blinding Lights,The Weeknd,canadian contemporary r&b; canadian pop; pop
 openai/chatgpt-4o-latest,20241121213656,Wake Up,Arcade Fire,Unknown
-openai/chatgpt-4o-latest,20241121213656,Houdini,Foster the People,Unknown
+openai/chatgpt-4o-latest,20241121213656,Houdini,Foster the People,indietronica; modern alternative rock; modern rock; rock
 openai/chatgpt-4o-latest,20241121213656,Starman,David Bowie,art rock; classic rock; glam rock; permanent wave; rock
 openai/chatgpt-4o-latest,20241121213659,Motion Picture Soundtrack,Radiohead,alternative rock; art rock; melancholia; oxford indie; permanent wave; rock
 openai/chatgpt-4o-latest,20241121213659,"Sea, Swallow Me",Cocteau Twins & Harold Budd,Unknown
@@ -2570,7 +2970,7 @@ openai/chatgpt-4o-latest,20241121213659,Holocene,Bon Iver,chamber pop; eau clair
 openai/chatgpt-4o-latest,20241121213659,Nude,Radiohead,alternative rock; art rock; melancholia; oxford indie; permanent wave; rock
 openai/chatgpt-4o-latest,20241121213659,Fourth of July,Sufjan Stevens,Unknown
 openai/chatgpt-4o-latest,20241121213659,Wake Up,Arcade Fire,Unknown
-openai/chatgpt-4o-latest,20241121213659,Breathe Me,Sia,Unknown
+openai/chatgpt-4o-latest,20241121213659,Breathe Me,Sia,pop
 openai/chatgpt-4o-latest,20241121213659,Pink Moon,Nick Drake,Unknown
 openai/chatgpt-4o-latest,20241121213659,Dark Star,Beck,Unknown
 openai/chatgpt-4o-latest,20241121213659,Blissing Me,Björk,Unknown
@@ -2578,7 +2978,7 @@ openai/chatgpt-4o-latest,20241121213701,Feel It Still,Portugal. The Man,Unknown
 openai/chatgpt-4o-latest,20241121213701,Electric Feel,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 openai/chatgpt-4o-latest,20241121213701,Blinding Lights,The Weeknd,canadian contemporary r&b; canadian pop; pop
 openai/chatgpt-4o-latest,20241121213701,Take Five,Dave Brubeck,Unknown
-openai/chatgpt-4o-latest,20241121213701,On Top of the World,Imagine Dragons,Unknown
+openai/chatgpt-4o-latest,20241121213701,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/chatgpt-4o-latest,20241121213701,Weightless,Marconi Union,ambient
 openai/chatgpt-4o-latest,20241121213701,Pocketful of Sunshine,Natasha Bedingfield,Unknown
 openai/chatgpt-4o-latest,20241121213701,Good Vibes,Chris Janson,Unknown
@@ -2624,7 +3024,7 @@ openai/chatgpt-4o-latest,20241121213714,River,Leon Bridges,Unknown
 openai/chatgpt-4o-latest,20241121213714,Pink Moon,Nick Drake,Unknown
 openai/chatgpt-4o-latest,20241121213714,Bloom,ODESZA,Unknown
 openai/chatgpt-4o-latest,20241121213714,First Day of My Life,Bright Eyes,chamber pop; indie rock; melancholia; omaha indie; stomp and holler
-openai/chatgpt-4o-latest,20241121213717,Breathe Me,Sia,Unknown
+openai/chatgpt-4o-latest,20241121213717,Breathe Me,Sia,pop
 openai/chatgpt-4o-latest,20241121213717,Clair de Lune,Debussy,Unknown
 openai/chatgpt-4o-latest,20241121213717,Holocene,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
 openai/chatgpt-4o-latest,20241121213717,Space Oddity,David Bowie,art rock; classic rock; glam rock; permanent wave; rock
@@ -2680,7 +3080,7 @@ openai/chatgpt-4o-latest,20241121213729,Someone Great,LCD Soundsystem,Unknown
 openai/chatgpt-4o-latest,20241121213729,Holocene,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
 openai/chatgpt-4o-latest,20241121213729,Time to Pretend,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 openai/chatgpt-4o-latest,20241121213729,In the Waiting Line,Zero 7,Unknown
-openai/chatgpt-4o-latest,20241121213729,Breathe Me,Sia,Unknown
+openai/chatgpt-4o-latest,20241121213729,Breathe Me,Sia,pop
 openai/chatgpt-4o-latest,20241121213729,First Day of My Life,Bright Eyes,chamber pop; indie rock; melancholia; omaha indie; stomp and holler
 openai/chatgpt-4o-latest,20241121213729,Wake Up,Arcade Fire,Unknown
 openai/chatgpt-4o-latest,20241121213729,Skinny Love,Bon Iver,chamber pop; eau claire indie; indie folk; melancholia; modern rock
@@ -2753,7 +3153,7 @@ openai/gpt-4o-mini,20241121165830,Can't Stop the Feeling!,Justin Timberlake,danc
 openai/gpt-4o-mini,20241121165830,Shake It Off,Taylor Swift,pop
 openai/gpt-4o-mini,20241121165830,Valerie,Mark Ronson ft. Amy Winehouse,Unknown
 openai/gpt-4o-mini,20241121165830,Best Day of My Life,American Authors,modern rock; pop rock
-openai/gpt-4o-mini,20241121165830,On Top of the World,Imagine Dragons,Unknown
+openai/gpt-4o-mini,20241121165830,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/gpt-4o-mini,20241121165835,Feel Good Inc.,Gorillaz,Unknown
 openai/gpt-4o-mini,20241121165835,Happy,Pharrell Williams,dance pop; pop
 openai/gpt-4o-mini,20241121165835,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
@@ -2809,7 +3209,7 @@ openai/gpt-4o-mini,20241121165901,Happy,Pharrell Williams,dance pop; pop
 openai/gpt-4o-mini,20241121165901,Good Life,Kanye West,Unknown
 openai/gpt-4o-mini,20241121165901,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
 openai/gpt-4o-mini,20241121165901,Walking on Sunshine,Katrina and the Waves,new wave pop
-openai/gpt-4o-mini,20241121165901,On Top of the World,Imagine Dragons,Unknown
+openai/gpt-4o-mini,20241121165901,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/gpt-4o-mini,20241121165901,Lovely Day,Bill Withers,classic soul; funk; quiet storm; soul
 openai/gpt-4o-mini,20241121165901,Can’t Stop the Feeling!,Justin Timberlake,dance pop; pop
 openai/gpt-4o-mini,20241121165901,Best Day of My Life,American Authors,modern rock; pop rock
@@ -2929,7 +3329,7 @@ openai/gpt-4o-mini,20241121211031,Lovely Day,Bill Withers,classic soul; funk; qu
 openai/gpt-4o-mini,20241121211031,Best Day of My Life,American Authors,modern rock; pop rock
 openai/gpt-4o-mini,20241121211031,Feel Good Inc.,Gorillaz,Unknown
 openai/gpt-4o-mini,20241121211031,Uptown Funk,Mark Ronson ft. Bruno Mars,dance pop; pop
-openai/gpt-4o-mini,20241121211031,On Top of the World,Imagine Dragons,Unknown
+openai/gpt-4o-mini,20241121211031,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/gpt-4o-mini,20241121211031,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
 openai/gpt-4o-mini,20241121211031,Ain't No Mountain High Enough,Marvin Gaye & Tammi Terrell,Unknown
 openai/gpt-4o-mini,20241121211033,Feeling Good,Nina Simone,jazz blues; neo soul; soul; soul jazz; torch song; vocal jazz
@@ -3111,7 +3511,7 @@ openai/gpt-4o-mini,20241121213838,Uptown Funk,Mark Ronson ft. Bruno Mars,dance p
 openai/gpt-4o-mini,20241121213838,Don't Stop Believin',Journey,album rock; classic rock; hard rock; mellow gold; rock; soft rock
 openai/gpt-4o-mini,20241121213838,Shake It Off,Taylor Swift,pop
 openai/gpt-4o-mini,20241121213838,Can't Stop the Feeling!,Justin Timberlake,dance pop; pop
-openai/gpt-4o-mini,20241121213838,I Gotta Feeling,The Black Eyed Peas,Unknown
+openai/gpt-4o-mini,20241121213838,I Gotta Feeling,The Black Eyed Peas,dance pop; pop; pop rap
 openai/gpt-4o-mini,20241121213841,Feeling Good,Nina Simone,jazz blues; neo soul; soul; soul jazz; torch song; vocal jazz
 openai/gpt-4o-mini,20241121213841,Happy,Pharrell Williams,dance pop; pop
 openai/gpt-4o-mini,20241121213841,Good Vibrations,The Beach Boys,baroque pop; classic rock; folk rock; mellow gold; psychedelic rock; rock; singer-songwriter; sunshine pop
@@ -3431,7 +3831,7 @@ openai/o1-mini,20241121213918,Lose Yourself,Eminem,Unknown
 openai/o1-mini,20241121213918,Rolling in the Deep,Adele,british soul; pop; pop soul; uk pop
 openai/o1-mini,20241121213918,Bohemian Rhapsody,Queen,classic rock; glam rock; rock
 openai/o1-mini,20241121213918,Shape of You,Ed Sheeran,pop; singer-songwriter pop; uk pop
-openai/o1-mini,20241121213918,Believer,Imagine Dragons,Unknown
+openai/o1-mini,20241121213918,Believer,Imagine Dragons,modern rock; pop; rock
 openai/o1-mini,20241121213925,Levitating,Dua Lipa,dance pop; pop; uk pop
 openai/o1-mini,20241121213925,Blinding Lights,The Weeknd,canadian contemporary r&b; canadian pop; pop
 openai/o1-mini,20241121213925,Shape of You,Ed Sheeran,pop; singer-songwriter pop; uk pop
@@ -3476,7 +3876,7 @@ openai/o1-mini,20241121213939,Adventure of a Lifetime,Coldplay,permanent wave; p
 openai/o1-mini,20241121213939,Electric Feel,MGMT,alternative rock; indie rock; indietronica; modern rock; rock
 openai/o1-mini,20241121213939,Feel It Still,Portugal. The Man,Unknown
 openai/o1-mini,20241121213939,Happy,Pharrell Williams,dance pop; pop
-openai/o1-mini,20241121213939,On Top of the World,Imagine Dragons,Unknown
+openai/o1-mini,20241121213939,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/o1-mini,20241121213939,Best Day of My Life,American Authors,modern rock; pop rock
 openai/o1-mini,20241121213939,Counting Stars,OneRepublic,Unknown
 openai/o1-mini,20241121213939,Wake Me Up,Avicii,Unknown
@@ -3491,7 +3891,7 @@ openai/o1-mini,20241121213943,Shake It Off,Taylor Swift,pop
 openai/o1-mini,20241121213943,Good as Hell,Lizzo,Unknown
 openai/o1-mini,20241121213943,Roar,Katy Perry,Unknown
 openai/o1-mini,20241121213943,Best Day of My Life,American Authors,modern rock; pop rock
-openai/o1-mini,20241121213943,On Top of the World,Imagine Dragons,Unknown
+openai/o1-mini,20241121213943,On Top of the World,Imagine Dragons,modern rock; pop; rock
 openai/o1-mini,20241121213946,Sunflower,Post Malone & Swae Lee,Unknown
 openai/o1-mini,20241121213946,Levitating,Dua Lipa,dance pop; pop; uk pop
 openai/o1-mini,20241121213946,Blinding Lights,The Weeknd,canadian contemporary r&b; canadian pop; pop

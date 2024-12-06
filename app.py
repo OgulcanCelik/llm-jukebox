@@ -39,18 +39,18 @@ def get_experiment_stats():
         "models": [],
         "runs_per_model": {},
     }
-    
+
     # Count files per model directory
     for model_dir in outputs_dir.iterdir():
         if model_dir.is_dir() and not model_dir.name == "error_logs":
-            model_name = model_dir.name.replace('_', '/')
+            model_name = model_dir.name.replace("_", "/")
             playlist_files = list(model_dir.glob("playlist_*.json"))
             num_runs = len(playlist_files)
-            
+
             stats["models"].append(model_name)
             stats["runs_per_model"][model_name] = num_runs
             stats["total_runs"] += num_runs
-    
+
     return stats
 
 
@@ -68,82 +68,84 @@ def generate_page_data():
     model_stats = get_model_statistics(df)
 
     # Get song frequencies
-    song_counts = df.groupby(['song', 'artist']).size().reset_index(name='count')
-    song_counts['song_artist'] = song_counts['song'] + ' - ' + song_counts['artist']
-    song_counts = song_counts.sort_values('count', ascending=False)
-    
+    song_counts = df.groupby(["song", "artist"]).size().reset_index(name="count")
+    song_counts["song_artist"] = song_counts["song"] + " - " + song_counts["artist"]
+    song_counts = song_counts.sort_values("count", ascending=False)
+
     # Get artist frequencies
-    artist_counts = df['artist'].value_counts().reset_index()
-    artist_counts.columns = ['artist', 'count']
-    
+    artist_counts = df["artist"].value_counts().reset_index()
+    artist_counts.columns = ["artist", "count"]
+
     # Create frequency plots
     song_freq_plot = px.bar(
         song_counts.head(10),
-        x='count',
-        y='song_artist',
-        orientation='h',
-        title='Most Frequent Songs Across All Models',
-        labels={'count': 'Times Selected', 'song_artist': 'Song'},
-        template='plotly_dark',  # Use dark theme
+        x="count",
+        y="song_artist",
+        orientation="h",
+        title="Most Frequent Songs Across All Models",
+        labels={"count": "Times Selected", "song_artist": "Song"},
+        template="plotly_dark",  # Use dark theme
         height=400,
     )
     song_freq_plot.update_layout(
-        yaxis={'autorange': 'reversed'},  # Reverse y-axis to show most frequent at top
-        xaxis_title='Times Selected',
+        yaxis={"autorange": "reversed"},  # Reverse y-axis to show most frequent at top
+        xaxis_title="Times Selected",
         yaxis_title=None,
         margin=dict(l=20, r=20, t=40, b=20),  # Adjust margins
         title_x=0.5,
     )
     song_freq_plot.update_traces(
-        marker_color='#1DB954',  # Spotify green
+        marker_color="#1DB954",  # Spotify green
         marker=dict(
-            line=dict(width=1, color='#191414'),  # Dark border around bars
-            opacity=0.9
-        )
+            line=dict(width=1, color="#191414"), opacity=0.9  # Dark border around bars
+        ),
     )
-    
+
     artist_freq_plot = px.bar(
         artist_counts.head(10),
-        x='count',
-        y='artist',
-        orientation='h',
-        title='Most Frequent Artists Across All Models',
-        labels={'count': 'Times Selected', 'artist': 'Artist'},
-        template='plotly_dark',  # Use dark theme
+        x="count",
+        y="artist",
+        orientation="h",
+        title="Most Frequent Artists Across All Models",
+        labels={"count": "Times Selected", "artist": "Artist"},
+        template="plotly_dark",  # Use dark theme
         height=400,
     )
     artist_freq_plot.update_layout(
-        yaxis={'autorange': 'reversed'},  # Reverse y-axis to show most frequent at top
-        xaxis_title='Times Selected',
+        yaxis={"autorange": "reversed"},  # Reverse y-axis to show most frequent at top
+        xaxis_title="Times Selected",
         yaxis_title=None,
         margin=dict(l=20, r=20, t=40, b=20),  # Adjust margins
         title_x=0.5,
     )
     artist_freq_plot.update_traces(
-        marker_color='#1DB954',  # Spotify green
+        marker_color="#1DB954",  # Spotify green
         marker=dict(
-            line=dict(width=1, color='#191414'),  # Dark border around bars
-            opacity=0.9
-        )
+            line=dict(width=1, color="#191414"), opacity=0.9  # Dark border around bars
+        ),
     )
-    
+
     # Convert plots to HTML
     song_freq_plot = song_freq_plot.to_html(full_html=False, include_plotlyjs=False)
     artist_freq_plot = artist_freq_plot.to_html(full_html=False, include_plotlyjs=False)
-    
+
     # Get model comparison plot
     model_comparison_plot = create_model_comparison_plot(df)
     if isinstance(model_comparison_plot, str):
         model_comparison_plot_html = model_comparison_plot
     else:
-        model_comparison_plot_html = model_comparison_plot.to_html(full_html=False, include_plotlyjs=False)
-        
+        model_comparison_plot_html = model_comparison_plot.to_html(
+            full_html=False, include_plotlyjs=False
+        )
+
     # Get model diversity plot
     model_diversity_plot = create_model_diversity_plot(get_model_top_songs(df))
     if isinstance(model_diversity_plot, str):
         model_diversity_plot_html = model_diversity_plot
     else:
-        model_diversity_plot_html = model_diversity_plot.to_html(full_html=False, include_plotlyjs=False)
+        model_diversity_plot_html = model_diversity_plot.to_html(
+            full_html=False, include_plotlyjs=False
+        )
 
     # Process playlists
     playlists = {}
@@ -159,42 +161,48 @@ def generate_page_data():
 
     # Get genre statistics and plots
     genre_analysis = get_genre_statistics(playlists)
-    
+
     # Calculate top genre using normalized genres
     all_genres = []
     for playlist in playlists.values():
         for song in playlist:
-            if 'genres' in song and song['genres']:
-                normalized_genres = [normalize_genre(genre) for genre in song['genres']]
+            if "genres" in song and song["genres"]:
+                normalized_genres = [normalize_genre(genre) for genre in song["genres"]]
                 all_genres.extend(normalized_genres)
-    
+
     genre_counts = Counter(all_genres)
     # Only consider genres that appear more than once to avoid noise
-    significant_genres = {genre: count for genre, count in genre_counts.items() if count > 1}
-    top_genre = max(significant_genres.items(), key=lambda x: x[1])[0] if significant_genres else "N/A"
+    significant_genres = {
+        genre: count for genre, count in genre_counts.items() if count > 1
+    }
+    top_genre = (
+        max(significant_genres.items(), key=lambda x: x[1])[0]
+        if significant_genres
+        else "N/A"
+    )
 
     return {
-        'playlists': playlists,
-        'genre_distribution_plot': genre_analysis['genre_distribution_plot'],
-        'genre_heatmap': genre_analysis['genre_heatmap'],
-        'genre_chord_diagram': genre_analysis['genre_chord_diagram'],
-        'genre_stats': genre_analysis['genre_stats'],
-        'experiment_stats': experiment_stats,
-        'total_songs': total_songs,
-        'total_models': total_models,
-        'model_stats': model_stats.to_dict("records"),
-        'song_freq_plot': song_freq_plot,
-        'artist_freq_plot': artist_freq_plot,
-        'model_comparison_plot': model_comparison_plot_html,
-        'model_diversity_plot': model_diversity_plot_html,
-        'top_genre': top_genre
+        "playlists": playlists,
+        "genre_distribution_plot": genre_analysis["genre_distribution_plot"],
+        "genre_heatmap": genre_analysis["genre_heatmap"],
+        "genre_chord_diagram": genre_analysis["genre_chord_diagram"],
+        "genre_stats": genre_analysis["genre_stats"],
+        "experiment_stats": experiment_stats,
+        "total_songs": total_songs,
+        "total_models": total_models,
+        "model_stats": model_stats.to_dict("records"),
+        "song_freq_plot": song_freq_plot,
+        "artist_freq_plot": artist_freq_plot,
+        "model_comparison_plot": model_comparison_plot_html,
+        "model_diversity_plot": model_diversity_plot_html,
+        "top_genre": top_genre,
     }
 
 
 @app.route("/")
 def index():
     data = generate_page_data()
-    return render_template('index.html', **data)
+    return render_template("index.html", **data)
 
 
 @app.route("/data_exports/<path:filename>")
@@ -207,20 +215,20 @@ def create_static_site(dist_dir):
     """Generate a static version of the site."""
     import os
     import shutil
-    
+
     # Create dist directory if it doesn't exist
     os.makedirs(dist_dir, exist_ok=True)
-    
+
     # Create data_exports directory inside dist
-    data_exports_dir = os.path.join(dist_dir, 'data_exports')
+    data_exports_dir = os.path.join(dist_dir, "data_exports")
     os.makedirs(data_exports_dir, exist_ok=True)
-    
+
     # Get all the data
     data = generate_page_data()
 
     # Render the template with the data
     with app.app_context():
-        html_content = render_template('index.html', **data)
+        html_content = render_template("index.html", **data)
 
     # Write the HTML file
     with open(os.path.join(dist_dir, "index.html"), "w", encoding="utf-8") as f:
@@ -229,13 +237,17 @@ def create_static_site(dist_dir):
     # Copy static assets
     static_dir = os.path.join(app.root_path, "static")
     if os.path.exists(static_dir):
-        shutil.copytree(static_dir, os.path.join(dist_dir, "static"), dirs_exist_ok=True)
-    
+        shutil.copytree(
+            static_dir, os.path.join(dist_dir, "static"), dirs_exist_ok=True
+        )
+
     # Copy data exports
     data_dir = os.path.join(app.root_path, "data_exports")
     if os.path.exists(data_dir):
-        shutil.copytree(data_dir, os.path.join(dist_dir, "data_exports"), dirs_exist_ok=True)
+        shutil.copytree(
+            data_dir, os.path.join(dist_dir, "data_exports"), dirs_exist_ok=True
+        )
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5001)

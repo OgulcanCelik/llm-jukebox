@@ -337,5 +337,24 @@
   "Michael Jackson": [
     "r&b",
     "soul"
+  ],
+  "Imagine Dragons": [
+    "modern rock",
+    "pop",
+    "rock"
+  ],
+  "Sia": [
+    "pop"
+  ],
+  "The Black Eyed Peas": [
+    "dance pop",
+    "pop",
+    "pop rap"
+  ],
+  "Foster the People": [
+    "indietronica",
+    "modern alternative rock",
+    "modern rock",
+    "rock"
   ]
 }
