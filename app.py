@@ -22,6 +22,8 @@ import shutil
 from pathlib import Path
 import plotly.express as px
 from collections import Counter
+from temperature_analysis import generate_temperature_analysis
+import json
 
 app = Flask(__name__)
 
@@ -203,6 +205,51 @@ def generate_page_data():
 def index():
     data = generate_page_data()
     return render_template("index.html", **data)
+
+
+@app.route("/temperature")
+def temperature():
+    """Temperature study page."""
+    print("\nGenerating temperature analysis data...")
+    analysis_data = generate_temperature_analysis()
+    
+    print("\nAnalysis data summary:")
+    print(f"Models: {analysis_data['models']}")
+    print(f"Stats keys: {list(analysis_data['stats'].keys())}")
+    print(f"Plot types: {list(analysis_data['plots'].keys())}")
+    
+    # Convert Plotly figures to JSON
+    plots = {}
+    for name, fig in analysis_data["plots"].items():
+        try:
+            # Convert to dict first, then process numpy arrays
+            plot_dict = fig.to_dict()
+            
+            # Convert any numpy arrays in the data
+            for trace in plot_dict.get('data', []):
+                for key, value in trace.items():
+                    if hasattr(value, 'tolist'):
+                        trace[key] = value.tolist()
+                        
+            # Convert any numpy arrays in the layout
+            for key, value in plot_dict.get('layout', {}).items():
+                if hasattr(value, 'tolist'):
+                    plot_dict['layout'][key] = value.tolist()
+            
+            plots[name] = json.dumps(plot_dict)
+            print(f"Successfully converted {name} plot to JSON")
+        except Exception as e:
+            print(f"Error converting {name} plot to JSON: {e}")
+            import traceback
+            print(traceback.format_exc())
+            plots[name] = json.dumps({})  # Empty plot as fallback
+    
+    return render_template(
+        "temperature.html",
+        stats=json.dumps(analysis_data["stats"]),
+        plots=plots,
+        models=analysis_data["models"]
+    )
 
 
 @app.route("/data_exports/<path:filename>")

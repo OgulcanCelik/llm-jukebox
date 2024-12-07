@@ -339,6 +339,7 @@ def create_chord_diagram(genre_df):
     """Create a chord diagram showing genre relationships between models."""
     import plotly.graph_objects as go
     import numpy as np
+    import colorsys
     
     # Normalize genres
     genre_df["normalized_genre"] = genre_df["genre"].apply(normalize_genre)
@@ -357,19 +358,19 @@ def create_chord_diagram(genre_df):
             if genre in model_genres:
                 matrix[i][j] = model_genres[genre]
     
-    # Define vibrant colors for models
-    model_colors = [
-        (255, 107, 107),  # Coral Red
-        (78, 205, 196),   # Turquoise
-        (69, 183, 209),   # Sky Blue
-        (150, 206, 180),  # Sage Green
-        (255, 238, 173),  # Cream
-        (212, 165, 165),  # Dusty Rose
-        (155, 89, 182),   # Purple
-        (52, 152, 219),   # Blue
-        (230, 126, 34),   # Orange
-        (39, 174, 96)     # Green
-    ]
+    # Generate colors dynamically based on number of models
+    def generate_colors(n):
+        colors = []
+        for i in range(n):
+            # Generate evenly spaced hues
+            hue = i / n
+            # Convert HSV to RGB (using full saturation and value)
+            rgb = colorsys.hsv_to_rgb(hue, 0.8, 0.95)
+            # Convert to 0-255 range
+            colors.append(tuple(int(x * 255) for x in rgb))
+        return colors
+    
+    model_colors = generate_colors(len(models))
     
     # Convert RGB tuples to hex for nodes
     model_hex_colors = [f"#{r:02x}{g:02x}{b:02x}" for r, g, b in model_colors]

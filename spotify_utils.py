@@ -42,6 +42,7 @@ def get_track_info(song_name, artist_name):
     if search_key in cache:
         # If we have a valid Spotify URL in cache, use it
         if cache[search_key].get('spotify_url'):
+            print(f"Found in cache: {search_key}")
             return cache[search_key]
     
     try:
@@ -50,6 +51,7 @@ def get_track_info(song_name, artist_name):
         
         # Search for the track
         query = f"track:{song_name} artist:{artist_name}"
+        print(f"Searching Spotify for: {query}")
         results = spotify.search(q=query, type='track', limit=1)
         
         if results['tracks']['items']:
@@ -60,19 +62,32 @@ def get_track_info(song_name, artist_name):
             artist = spotify.artist(artist_id)
             genres = artist['genres']
             
+            # Get album genres
+            album_id = track['album']['id']
+            album = spotify.album(album_id)
+            album_genres = album.get('genres', [])
+            
+            # Combine and deduplicate genres
+            all_genres = list(set(genres + album_genres))
+            
             track_info = {
                 'image_url': track['album']['images'][0]['url'] if track['album']['images'] else None,
                 'spotify_url': track['external_urls']['spotify'],
                 'preview_url': track['preview_url'],
                 'album_name': track['album']['name'],
-                'genres': genres
+                'genres': all_genres,
+                'genre': all_genres[0] if all_genres else 'Unknown'  # Use first genre as primary
             }
+            print(f"Found genres for {search_key}: {all_genres}")
+            
             # Update cache
             cache[search_key] = track_info
             save_cache(cache)
             return track_info
+        else:
+            print(f"No results found for: {search_key}")
     except Exception as e:
-        print(f"Error fetching track info for {song_name} - {artist_name}: {e}")
+        print(f"Error fetching track info for {search_key}: {e}")
     
     # Default values for missing/error cases
     default_info = {
@@ -80,7 +95,8 @@ def get_track_info(song_name, artist_name):
         'spotify_url': None,
         'preview_url': None,
         'album_name': 'Unknown Album',
-        'genres': []
+        'genres': [],
+        'genre': 'Unknown'
     }
     
     # Only cache if not already in cache
