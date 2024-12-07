@@ -24,6 +24,8 @@ import plotly.express as px
 from collections import Counter
 from temperature_analysis import generate_temperature_analysis
 import json
+import glob
+import re
 
 app = Flask(__name__)
 
@@ -54,6 +56,17 @@ def get_experiment_stats():
             stats["total_runs"] += num_runs
 
     return stats
+
+
+def extract_model_from_filename(filename):
+    """Extract model name from playlist filename."""
+    match = re.search(r"playlist_(.*?)_run\d+", filename)
+    if match:
+        model = match.group(1)
+        # Replace underscores with forward slashes for model names
+        model = model.replace("_", "/")
+        return model
+    return None
 
 
 def generate_page_data():
@@ -210,45 +223,31 @@ def index():
 @app.route("/temperature")
 def temperature():
     """Temperature study page."""
-    print("\nGenerating temperature analysis data...")
     analysis_data = generate_temperature_analysis()
-    
-    print("\nAnalysis data summary:")
-    print(f"Models: {analysis_data['models']}")
-    print(f"Stats keys: {list(analysis_data['stats'].keys())}")
-    print(f"Plot types: {list(analysis_data['plots'].keys())}")
-    
-    # Convert Plotly figures to JSON
+
     plots = {}
     for name, fig in analysis_data["plots"].items():
         try:
-            # Convert to dict first, then process numpy arrays
             plot_dict = fig.to_dict()
-            
-            # Convert any numpy arrays in the data
-            for trace in plot_dict.get('data', []):
+
+            for trace in plot_dict.get("data", []):
                 for key, value in trace.items():
-                    if hasattr(value, 'tolist'):
+                    if hasattr(value, "tolist"):
                         trace[key] = value.tolist()
-                        
-            # Convert any numpy arrays in the layout
-            for key, value in plot_dict.get('layout', {}).items():
-                if hasattr(value, 'tolist'):
-                    plot_dict['layout'][key] = value.tolist()
-            
+
+            for key, value in plot_dict.get("layout", {}).items():
+                if hasattr(value, "tolist"):
+                    plot_dict["layout"][key] = value.tolist()
+
             plots[name] = json.dumps(plot_dict)
-            print(f"Successfully converted {name} plot to JSON")
         except Exception as e:
-            print(f"Error converting {name} plot to JSON: {e}")
-            import traceback
-            print(traceback.format_exc())
             plots[name] = json.dumps({})  # Empty plot as fallback
-    
+
     return render_template(
         "temperature.html",
         stats=json.dumps(analysis_data["stats"]),
         plots=plots,
-        models=analysis_data["models"]
+        models=analysis_data["models"],
     )
 
 
@@ -294,6 +293,39 @@ def create_static_site(dist_dir):
         shutil.copytree(
             data_dir, os.path.join(dist_dir, "data_exports"), dirs_exist_ok=True
         )
+
+
+def load_temperature_study_data():
+    """Load all temperature study data."""
+    data = {}
+    
+    # Process each temperature directory
+    for temp_dir in glob.glob("outputs/temperature_study_*"):
+        temp = float(temp_dir.split("_")[-1])
+        
+        # Process each JSON file in the directory
+        for json_file in glob.glob(os.path.join(temp_dir, "playlist_*.json")):
+            # Extract model name from filename
+            model = extract_model_from_filename(json_file)
+            if not model:
+                continue
+            
+            # Initialize model data if not exists
+            if model not in data:
+                data[model] = {}
+            if temp not in data[model]:
+                data[model][temp] = []
+            
+            # Load and process playlist data
+            try:
+                with open(json_file, 'r') as f:
+                    playlist_data = json.load(f)
+                    if "songs" in playlist_data:
+                        data[model][temp].extend(playlist_data["songs"])
+            except Exception as e:
+                continue
+
+    return data
 
 
 if __name__ == "__main__":

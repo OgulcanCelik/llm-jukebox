@@ -13,55 +13,39 @@ def load_temperature_data():
     outputs_dir = Path("outputs")
     data = defaultdict(lambda: defaultdict(list))
 
-    print(f"Looking for temperature study data in: {outputs_dir}")
-
-    # Load cached Spotify data
-    spotify_cache_file = Path("data/spotify_cache.json")
-    if spotify_cache_file.exists():
-        print("Loading Spotify cache...")
-        with open(spotify_cache_file) as f:
-            spotify_cache = json.load(f)
-    else:
-        print("No Spotify cache found!")
-        spotify_cache = {}
-
     for temp_dir in outputs_dir.glob("temperature_study_*"):
         if not temp_dir.is_dir():
             continue
 
-        print(f"Found temperature directory: {temp_dir}")
-
-        # Extract temperature from directory name
         temp = float(temp_dir.name.split("_temp_")[1])
-        print(f"Temperature value: {temp}")
 
         for playlist_file in temp_dir.glob("playlist_*.json"):
-            # Extract model name from filename
             model_name = (
                 playlist_file.name.split("playlist_")[1]
                 .split("_run")[0]
                 .replace("_", "/")
             )
-            print(f"Processing file for model {model_name}: {playlist_file}")
 
             try:
                 with open(playlist_file) as f:
                     playlist_data = json.load(f)
                     if "songs" in playlist_data:
                         for song in playlist_data["songs"]:
-                            # Add temperature and model info
                             song["temperature"] = temp
                             song["model"] = model_name
 
-                            # Get genre from Spotify cache
                             song_key = f"{song['song']} - {song['artist']}"
-                            if song_key in spotify_cache:
-                                song["genre"] = spotify_cache[song_key].get(
-                                    "genre", "Unknown"
-                                )
-                                song["genres"] = spotify_cache[song_key].get(
-                                    "genres", []
-                                )
+                            spotify_cache_file = Path("data/spotify_cache.json")
+                            if spotify_cache_file.exists():
+                                with open(spotify_cache_file) as f:
+                                    spotify_cache = json.load(f)
+                                if song_key in spotify_cache:
+                                    song["genre"] = spotify_cache[song_key].get(
+                                        "genre", "Unknown"
+                                    )
+                                    song["genres"] = spotify_cache[song_key].get(
+                                        "genres", []
+                                    )
                             else:
                                 song["genre"] = "Unknown"
                                 song["genres"] = []
@@ -69,11 +53,6 @@ def load_temperature_data():
                             data[model_name][temp].append(song)
             except Exception as e:
                 print(f"Error loading {playlist_file}: {e}")
-
-    print("\nLoaded data summary:")
-    for model, temp_data in data.items():
-        for temp, songs in temp_data.items():
-            print(f"Model: {model}, Temperature: {temp}, Songs: {len(songs)}")
 
     return data
 
@@ -93,11 +72,9 @@ def calculate_model_stats(data):
 
 def analyze_temperature_data(songs):
     """Analyze song data for a specific temperature."""
-    # Count unique songs and their occurrences
     song_counts = Counter(f"{song['song']} - {song['artist']}" for song in songs)
     unique_songs = len(song_counts)
 
-    # Count unique genres (excluding Unknown)
     all_genres = []
     for song in songs:
         if song.get("genres"):
@@ -106,7 +83,6 @@ def analyze_temperature_data(songs):
             all_genres.append(song["genre"])
     unique_genres = len(set(all_genres))
 
-    # Calculate repetition rate (percentage of songs that appear more than once)
     repeated_songs = sum(1 for count in song_counts.values() if count > 1)
     repetition_rate = (repeated_songs / unique_songs * 100) if unique_songs > 0 else 0
 
@@ -121,12 +97,9 @@ def create_diversity_plot(data):
     """Create a plot comparing diversity metrics across temperatures."""
     plot_data = []
 
-    print("\nCreating diversity plot:")
     for model, temp_data in data.items():
-        print(f"\nModel: {model}")
         for temp, songs in temp_data.items():
             stats = analyze_temperature_data(songs)
-            print(f"Temperature {temp}: {stats}")
             plot_data.append(
                 {
                     "model": model,
@@ -138,8 +111,6 @@ def create_diversity_plot(data):
             )
 
     df = pd.DataFrame(plot_data)
-    print("\nDiversity plot data:")
-    print(df)
 
     fig = go.Figure()
 
@@ -188,7 +159,6 @@ def create_diversity_plot(data):
         width=1000,  # Explicit width
     )
 
-    # Rotate x-axis labels for better readability
     fig.update_xaxes(tickangle=45)
 
     return fig
@@ -200,7 +170,6 @@ def create_genre_distribution_plot(data):
 
     for model, temp_data in data.items():
         for temp, songs in temp_data.items():
-            # Get all genres (a song can have multiple genres)
             all_genres = []
             for song in songs:
                 if song.get("genres"):
@@ -211,8 +180,7 @@ def create_genre_distribution_plot(data):
             genre_counts = Counter(all_genres)
             total_genres = sum(genre_counts.values())
 
-            # Calculate percentages for top 10 genres
-            if total_genres > 0:  # Only add data if we have genres
+            if total_genres > 0:
                 for genre, count in genre_counts.most_common(10):
                     plot_data.append(
                         {
@@ -225,7 +193,6 @@ def create_genre_distribution_plot(data):
 
     df = pd.DataFrame(plot_data)
 
-    # Create empty plot if no data
     fig = go.Figure()
 
     if not df.empty:
@@ -248,7 +215,6 @@ def create_genre_distribution_plot(data):
                     )
                 )
     else:
-        # Add placeholder text if no genre data
         fig.add_annotation(
             text="No genre data available.<br>Please run update_temperature_cache.py to fetch genre information.",
             xref="paper",
@@ -277,7 +243,6 @@ def create_genre_distribution_plot(data):
         barmode="group",
     )
 
-    # Rotate x-axis labels for better readability
     fig.update_xaxes(tickangle=45)
 
     return fig
@@ -293,7 +258,6 @@ def create_song_patterns_plot(data):
                 f"{song['song']} - {song['artist']}" for song in songs
             )
 
-            # Get top 10 songs
             for song, count in song_counts.most_common(10):
                 plot_data.append(
                     {
@@ -337,15 +301,12 @@ def create_song_patterns_plot(data):
         legend=dict(
             bgcolor="rgba(0,0,0,0)", bordercolor="rgba(255,255,255,0.2)", borderwidth=1
         ),
-        margin=dict(
-            t=50, l=50, r=50, b=150
-        ),  # Larger bottom margin for long song names
+        margin=dict(t=50, l=50, r=50, b=150),
         height=600,
         width=1000,
         barmode="group",
     )
 
-    # Rotate x-axis labels for better readability
     fig.update_xaxes(tickangle=45)
 
     return fig

@@ -179,7 +179,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Diversity Metrics</h5>
-          <div id="diversityPlot" style="width: 100%; height: 500px;"></div>
+          <div id="diversityPlot" style="width: 100%; height: 500px"></div>
         </div>
       </div>
 
@@ -187,7 +187,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Genre Distribution Comparison</h5>
-          <div id="genrePlot" style="width: 100%; height: 500px;"></div>
+          <div id="genrePlot" style="width: 100%; height: 500px"></div>
         </div>
       </div>
 
@@ -195,7 +195,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Song Selection Patterns</h5>
-          <div id="songPatternsPlot" style="width: 100%; height: 500px;"></div>
+          <div id="songPatternsPlot" style="width: 100%; height: 500px"></div>
         </div>
       </div>
     </div>
@@ -209,32 +209,32 @@
         genre: {{ plots.genre | safe }},
         patterns: {{ plots.patterns | safe }}
       };
-      
+
       // Wait for DOM to be ready
       document.addEventListener('DOMContentLoaded', function() {
         console.log('DOM loaded, initializing plots...');
-        
+
         // Render the plots with error handling
         try {
           // Diversity plot
           console.log('Rendering diversity plot...');
-          Plotly.newPlot('diversityPlot', 
+          Plotly.newPlot('diversityPlot',
             plotData.diversity.data,
             plotData.diversity.layout || {},
             {responsive: true}
           );
-          
+
           // Genre plot
           console.log('Rendering genre plot...');
-          Plotly.newPlot('genrePlot', 
+          Plotly.newPlot('genrePlot',
             plotData.genre.data,
             plotData.genre.layout || {},
             {responsive: true}
           );
-          
+
           // Song patterns plot
           console.log('Rendering patterns plot...');
-          Plotly.newPlot('songPatternsPlot', 
+          Plotly.newPlot('songPatternsPlot',
             plotData.patterns.data,
             plotData.patterns.layout || {},
             {responsive: true}
